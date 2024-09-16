@@ -1,0 +1,85 @@
+{
+  "user_location": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 26,
+    "confused_with": {}
+  },
+  "account_type": {
+    "precision": 0.9741379310344828,
+    "recall": 1.0,
+    "f1-score": 0.9868995633187774,
+    "support": 113,
+    "confused_with": {}
+  },
+  "carte_de_crédit": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "credit_card": {
+    "precision": 0.9893617021276596,
+    "recall": 1.0,
+    "f1-score": 0.9946524064171123,
+    "support": 93,
+    "confused_with": {}
+  },
+  "montant-d'argent": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "PERSON": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 54,
+    "confused_with": {}
+  },
+  "amount-of-money": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 62,
+    "confused_with": {}
+  },
+  "vendor_name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 21,
+    "confused_with": {}
+  },
+  "type_de_compte": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4,
+    "confused_with": {
+      "account_type": 3
+    }
+  },
+  "micro avg": {
+    "precision": 0.9894179894179894,
+    "recall": 0.9920424403183024,
+    "f1-score": 0.9907284768211921,
+    "support": 377
+  },
+  "macro avg": {
+    "precision": 0.9959444036846824,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.9312835521928766,
+    "support": 377
+  },
+  "weighted avg": {
+    "precision": 0.9896239376784322,
+    "recall": 0.9920424403183024,
+    "f1-score": 0.9883881285193987,
+    "support": 377
+  }
+}

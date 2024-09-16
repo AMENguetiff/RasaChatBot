@@ -1,0 +1,89 @@
+[
+  {
+    "text": "quelle est ma carte de crédit solde ?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 29,
+        "value": "carte de crédit",
+        "entity": "type_de_compte"
+      },
+      {
+        "start": 30,
+        "end": 35,
+        "value": "solde",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "account_type",
+        "start": 14,
+        "end": 29,
+        "confidence_entity": 0.8490801453590393,
+        "value": "credit",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.9990686774253845,
+        "value": "current balance",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "quel est mon compte compte courant solde ?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 34,
+        "value": "compte courant",
+        "entity": "credit_card"
+      },
+      {
+        "start": 35,
+        "end": 40,
+        "value": "solde",
+        "entity": "amount-of-money"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "credit_card",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.8552783727645874,
+        "value": "compte",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "credit_card",
+        "start": 20,
+        "end": 34,
+        "confidence_entity": 0.9469770789146423,
+        "value": "compte courant",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount-of-money",
+        "start": 35,
+        "end": 40,
+        "confidence_entity": 0.9991251826286316,
+        "value": "current balance",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
