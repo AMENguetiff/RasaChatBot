@@ -1,0 +1,1221 @@
+version: "2.0"
+nlu:
+
+- intent: greet
+  examples: |
+    - Salut 
+    - Bonjour
+    - salut
+    - bonjour
+    - Bonsoir
+    - Alo
+    - Je veux
+    - Je
+
+- intent: goodbye
+  examples: | 
+    - au revoir
+    - Au revoir
+    - à plus tard
+    - Bye Bye
+    - à plus
+    - Bonne nuit 
+    - bonne nuit
+    - à plus tard
+    - Jai fini
+    - Bonne journée
+    - arrêter
+    - BYEE
+    - AU REVOIR
+    - Merci beaucoup. A plus
+    - Passe une bonne journée. il est temps de partir, au revoir
+
+- intent: affirm
+  examples: |
+    - Oui
+    - D'accord 
+    - bien sûr
+    - Ç'est vrai 
+    - correctement
+    - Ouais
+    - oui
+    - ouais
+    - Je suis bon
+    - Je suis d'accord
+    - exactement
+    - Oui s il vous plaît
+    - oui je le ferais
+    - c est exact
+    - sûr
+    - Oui, merci.
+    - Surement 
+
+- intent: deny
+  examples: |
+    - non
+    - jamais
+    - Je ne pense pas
+    - je n aime pas ça
+    - certainement non
+    - pas vraiment
+    - Non
+    - non merci
+    - non ce n est pa le cas
+    - pas celui-là
+    - n utilisez pas cela
+    - s il vous plaît non
+    - Non  ne faites pas ça.
+
+- intent: inform
+  examples: |
+    - demain
+    - la semaine prochaine
+    - hier
+    - pour aujourd'hui
+    - La semaine dernière
+    - le mois dernier
+    - les deux derniers jours
+    - les deux dernières semaines
+
+- intent: timetable
+  examples: |
+    - Quelle est le temps d'ouverture de vos agences ?
+    - Quand ouvre votre agence ?
+    - Combien d'heures de travail ?
+    - Quand la fermuture ?
+    - Vous etes ouvert à 13H du matin ?
+    - Quand je peux vous consultez?
+    - Quand je peux arriver 
+
+- intent: branch_locator
+  examples: |
+    - pouvez-vous me parler des succursales [près de moi](user_location)?
+    - à quelle distance se trouve la succursale [la plus proche](user_location)?
+    - combien et [où](user_location) sont les succursales de votre banque?
+    - dites-moi la succursale [la plus proche](user_location) !
+    - [où](user_location) est la succursale de votre banque?
+    - localiser une succursale [à proximité](user_location)
+
+- intent: atm_locator
+  examples: |
+    - pouvez-vous me parler des guichets automatiques [près de moi](user_location)?
+    - à quelle distance se trouve le guichet automatique [le plus proche](user_location)?
+    - combien et [où](user_location) sont les guichets automatiques de votre banque?
+    - Donnez-moi le guichet automatique [le plus proche](user_location)
+    - [où](user_location) est le guichet automatique de votre banque?
+    - localiser un guichet automatique [à proximité](user_location)
+
+- intent: location_Unknown
+  examples: |
+    - je ne sais pas pour mon emplacement
+    - je ne suis pas sûr de ma localisation
+    - je ne sais pas
+    - je suis nouveau ici
+    - Je ne sais pas ce qu'est exactement cet endroit
+    - pouvez-vous m'aider avec l'emplacement je suis nouveau ici
+    - je ne connais pas l'emplacement
+    - je ne suis pas encore sûr de ma position
+    - je ne suis pas sûr
+    - Je ne suis pas sûr de ça
+    - je ne suis pas sûr en fait
+    - en fait, je suis nouveau ici, donc je ne sais pas où
+    - je ne suis pas sûr de ma position
+    - en fait, je ne sais vraiment pas que je suis nouveau ici
+    - en fait, je ne sais vraiment pas s'il vous plaît aidez-moi avec l'emplacement
+    - Je suis nouveau ici, je ne connais pas encore l'emplacement
+    - je ne sais vraiment pas
+    - je ne connais pas ma position
+    - je ne connais pas l'emplacement
+    - aucune idée que je suis nouveau ici
+    - Je ne connais pas encore l'emplacement
+    - je ne suis pas sûr de l'emplacement
+    - quelque part près de moi
+
+- intent: types_of_loans
+  examples: | 
+    - quels sont les différents types de prêts?
+    - combien de types de prêts existe-t-il?
+    - parlez-moi des prêts que vous proposez ?
+    - quels sont les types de prêt ?
+    - quels ont les types de credits que vous avez ?
+    - parlez moi des crédits que vous proposez
+
+- intent: condition_loan_approvel
+  examples: |
+    - A quelle condition le prêt sera-t-il approuvé?
+    - Sur quels critères mon prêt sera-t-il approuvé?
+    - Comment allez-vous approuver mon crédit?
+    - Existe-t-il d'autres conditions pour l'approbation du prêt?
+    - Dans quelles situations le prêt sera-t-il approuvé?
+    - Dites-moi les conditions d'approbation de la charge.
+    - À quelle condition mon prêt sera-t-il approuvé?
+    - Quels sont les critères d'approbation des prêts?
+    - Comment allez-vous approuver mon crédit?
+    - Mon prêt sera approuvé à quelle condition?
+    - Partager les conditions d'approbation du crédit. 
+
+- intent: extension_of_loan_tenure
+  examples: |
+    - Puis-je demander une prolongation de la durée de mon credit?
+    - combien de mois ou d'années vais-je avoir pour rembourser le prêt?
+    - combien de temps vais-je avoir pour rembourser?
+    - Dois-je rembourser dans un an?
+    - Comment puis-je demander la prolongation de ma durée de credit?
+    - Pouvez-vous prolonger ma durée de prêt?
+    - y a-t-il une possibilité de prolongation de mon année de prêt?
+    - allez-vous prolonger la durée de mon prêt? 
+    - Une demande de prolongation de la durée du crédit?
+
+- intent: loan_home_about
+  examples: | 
+    - parlez-moi des prêts bancaires à l'habitat
+    - qu'est-ce qu'un prêt au logement ?
+
+- intent: guarantees_home_loan_required
+  examples: |
+    - quelles sont les garanties exigées pour un pret d'habitat ?
+    - parle moi des garanties de pret d'habitat
+    - Pouvez vous me renseignez sur les garanties de pret d'habitat ?
+    - y'a t-il des garanties pour un pret d'habitat ?
+
+- intent: home_loan_rate
+  examples: |
+    - quel est le taux d'intérêt pour un prêt au logement ?
+    - indiquez-moi le taux d'intérêt pour le prêt au logement
+    - à combien s'élève le taux d'intérêt du prêt au logement ? 
+
+- intent: documents_required_for_homeloan
+  examples: | 
+    - quels sont les documents requis pour un prêt au logement ?
+    - quels sont les documents requis pour le prêt au logement ?
+    - quels sont les documents requis pour un prêt au logement ?
+    - quels sont les documents requis pour un prêt au logement ?
+    - quels sont les documents demandés pour un prêt au logement ?
+    - Quels sont les documents requis pour un prêt au logement ?
+    - quels documents présenter pour un prêt de l'habitat?
+    - quels documents la banque veut-elle pour un prêt au logement?
+    - Que devons-nous soumettre pour un prêt au logement?
+    - quelles sont les conditions d'un prêt au logement?
+    - quels papiers dois-je soumettre pour un prêt au logement?
+    - me donner des détails sur les documents de prêt au logement?
+    - pouvez-vous me dire brièvement quels documents je dois soumettre?
+
+- intent: Repayment_loanhome_period
+  examples: |
+    - indiquez-moi la durée du remboursement d'un pret de logement
+    - quelle est la durée du remboursement pour un pret au logement
+    - quel est le délai nécessaire pour rembourser un prêt au logement ?
+
+- intent: loan_home_max_amount
+  examples: | 
+    - quel est le montant maximum pour le prêt au logement ?
+    - indiquez-moi le montant maximum pour le prêt au logement
+    - quel est le montant maximum du prêt au logement ?
+
+- intent: loan_home_min_amount
+  examples: | 
+    - indiquez-moi le montant minimum pour le prêt au logement
+    - quel est le montant minimum pour un prêt au logement ?
+
+- intent: direct_credit_about
+  examples: |
+    - parlez-moi des crédits bancaires directs
+    - qu'est-ce qu'un credit direct ?
+    - C'est quoi un crédit direct ?
+
+- intent: guarantees_directcredit_required
+  examples: |
+    - quelles sont les garanties exigées pour un credit direct ?
+    - parle moi des garanties d'un credit direct
+    - Pouvez vous me renseignez sur les garanties d'un credit direct?
+    - y'a t-il des garanties pour un crédit direct ?
+
+- intent: directcredit_rate
+  examples: |
+    - quel est le taux d'intérêt pour un crédit direct ?
+    - indiquez-moi le taux d'intérêt pour le crédit direct
+    - à combien s'élève le taux d'intérêt d'un crédit direct ?
+
+- intent: documents_required_for_directcredit
+  examples: | 
+    - quels sont les documents requis pour un crédit direct ?
+    - quels sont les documents requis pour le crédit direct ?
+    - quels sont les documents requis pour un crédit direct ?
+    - quels sont les documents requis pour un crédit direct ?
+    - quels sont les documents demandés pour un crédit direct ?
+    - Quels sont les documents requis pour un crédit direct ?
+    - quels documents présenter pour un crédit direct?
+    - quels documents la banque veut-elle pour un crédit direct ?
+    - Que devons-nous soumettre pour un crédit direct ?
+    - quelles sont les conditions d'un crédit direct
+    - quels papiers dois-je soumettre pour un crédit direct
+    - me donner des détails sur les documents d'un crédit direct ?
+    - pouvez-vous me dire brièvement quels documents je dois soumettre pour avoir un credit direct?
+
+- intent: Repayment_directcredit_period
+  examples: |
+    - indiquez-moi la durée du remboursement d'un credit direct
+    - quelle est la durée du remboursement pour un crédit direct
+    - quel est le délai nécessaire pour rembourser un crédit direct ?
+
+- intent: directcredit_period
+  examples: | 
+    - quelle est la durée du crédit direct ?
+    - Quelle est la durée du crédit direct ?
+
+- intent: directcredit_max_amount
+  examples: | 
+    - quel est le montant maximum pour le crédit direct ?
+    - indiquez-moi le montant maximum pour le crédit direct
+    - quel est le montant maximum d'un crédit direct ?
+
+- intent: directcredit_min_amount
+  examples: | 
+    - indiquez-moi le montant minimum pour le crédit direct
+    - quel est le montant minimum pour un crédit direct ?
+
+- intent: credit_EslahMaskan_about
+  examples: |
+    - parlez-moi des crédits Eslah Masken offerts par vote banque
+    - qu'est-ce qu'un credit Eslah Maskan?
+    - C'est quoi un crédit Eslah Maskan ?
+
+- intent: guarantees_credit_EslahMaskan_required
+  examples: | 
+    - quelles sont les garanties exigées pour un credit Eslah Maskan ?
+    - parle moi des garanties d'un credit Eslah Maskan
+    - Pouvez vous me renseignez sur les garanties d'un credit Eslah Maskan?
+    - y'a t-il des garanties pour un crédit Eslah Maskan ?
+
+- intent: credit_EslahMaskan_rate
+  examples: |
+    - quel est le taux d'intérêt pour un crédit Eslah Maskan ?
+    - indiquez-moi le taux d'intérêt pour le crédit Eslah Maskan
+    - à combien s'élève le taux d'intérêt du crédit Eslah Maskan ?
+
+- intent: documents_required_for_EslahMaskan_credit
+  examples: | 
+    - quels sont les documents requis pour le crédit Eslah Maskan ?
+    - quels sont les documents requis pour le crédit Eslah Maskan?
+    - quels sont les documents requis pour un crédit Eslah Maskan ?
+    - quels sont les documents requis pour le crédit Eslah Maskan?
+    - quels sont les documents demandés pour un crédit Eslah Maskan ?
+    - Quels sont les documents requis pour le crédit Eslah Maskan ?
+    - quels documents présenter pour le crédit Eslah Maskan?
+    - quels documents la banque veut-elle pour un crédit Eslah Maskan?
+    - Que devons-nous soumettre pour un crédit Eslah Maskan?
+    - quelles sont les conditions d'un crédit Eslah Maskan?
+    - quels papiers dois-je soumettre pour un crédit Eslah Maskan?
+    - me donner des détails sur les documents le crédit Eslah Maskan?
+    - pouvez-vous me dire brièvement quels documents je dois soumettre pour un crédit Eslah Maskan?
+
+- intent: Repayment_EslahMaskan_credit_period
+  examples: |
+    - indiquez-moi la durée du remboursement du crédit Eslah Maskan
+    - quelle est la durée du remboursement pour un le crédit Eslah Maskan
+    - quel est le délai nécessaire pour rembourser un crédit Eslah Maskan?
+
+- intent: EslahMaskan_credit_period
+  examples: | 
+    - quelle est la durée du credit Eslah Maskan ?
+    - Quelle est la durée du crédit Eslah Maskan ?
+    - Dans combien du temps je peux avoir ce credit Eslah Maskan ?
+    - Combien de temps prend un credit Eslah maskan
+
+- intent: EslahMaskan_credit_max_amount
+  examples: | 
+    - quel est le montant maximum pour le crédit Eslah Maskan ?
+    - indiquez-moi le montant maximum pour le crédit Eslah Maskan
+    - quel est le montant maximum du crédit Eslah Maskan ?
+
+- intent: EslahMaskan_credit_min_amount
+  examples: | 
+    - indiquez-moi le montant minimum pour le crédit Eslah Maskan
+    - quel est le montant minimum pour le crédit Eslah Maskan ?
+
+- intent: car_loan_details
+  examples: |
+    - Quels sont les détails du prêt auto?
+    - Dites-moi des détails sur votre prêt auto?
+    - Quelles sont les informations complètes sur le crédit automobile?
+    - je veux savoir des informations complètes sur le prêt automobile
+    - Pouvez-vous s'il vous plaît aider à obtenir les détails du prêt automobile?
+    - Pouvez-vous transmettre les informations détaillées sur le prêt automobile?
+    - Partager les informations complètes du prêt de voiture
+    - Qu'est-ce que le crédit automobile
+    - Parlez-moi du prêt auto
+    - Décrire brièvement le prêt automobile?
+    - Me montrer les détails du prêt auto?
+    - Je veux un prêt auto, pouvez-vous me donner les détails?
+    - Veuillez fournir des informations sur le prêt automobile
+    - Quelles sont les caractéristiques du prêt personnel
+    - Parlez-moi des principales caractéristiques du prêt automobile
+    - Fonctionnalités du prêt d'auto
+    - Prêt auto
+    - Les détails du prêt automobile
+
+- intent: guarantees_carloan_required
+  examples: |
+    - quelles sont les garanties exigées pour un pret d'auto ?
+    - parle moi des garanties d'un pret d'auto
+    - Pouvez vous me renseignez sur les garanties d'un pret d'auto?
+    - y'a t-il des garanties pour un pret d'auto ?
+
+- intent: interest_rate_car_loan
+  examples: |
+    - quel est le taux d'intérêt pour un prêt d'auto ?
+    - indiquez-moi le taux d'intérêt pour un prêt du vehicule
+    - à combien s'élève le taux d'intérêt pour un prêt d'auto ?
+
+- intent: car_loan_documents_required
+  examples: | 
+    - quels sont les documents requis pour un prêt d'auto ?
+    - quels sont les documents demandés pour un prêt pour une vehicule ?
+    - Quels sont les documents requis pour un prêt d'auto ?
+    - quels documents présenter pour un prêt d'auto?
+    - quels documents la banque veut-elle pour un prêt d'auto?
+    - Que devons-nous soumettre pour un prêt pour une voiture?
+    - quelles sont les conditions d'un prêt d'auto?
+    - quels papiers dois-je soumettre pour un prêt de voiture?
+    - me donner des détails sur les documents de prêt pour avoir une voiture?
+    - pouvez-vous me dire brièvement quels documents je dois soumettre pour avoir un pret d'auto?
+
+- intent: Repayment_Carloan_period
+  examples: |
+    - indiquez-moi la durée du remboursement d'un pret d'auto
+    - quelle est la durée du remboursement pour un pret d'auto
+    - quel est le délai nécessaire pour rembourser un pret d'auto?
+   
+- intent: period_of_car_loan
+  examples: |
+    - Indiquez-moi la durée du processus de prêt d'auto
+    - Quelle est la durée de la procédure pour un prêt d'auto ?
+    - Dans combien du temps je peux avoir un pret d'auto ?
+    - Combien de temps prend un pret d'auto
+
+- intent: car_loan_amount_max
+  examples: |
+    - quel est le montant maximum du prêt d'une vehicule ?
+    - indiquez-moi le montant maximum du prêt pour une voiture
+    - quel est le montant maximum d'un prêt d'auto ?
+
+- intent: car_loan_amount_min
+  examples: |
+    - quel est le montant minimum pour un prêt d'auto ?
+    - indiquez-moi le montant minimum pour un prêt d'auto
+    - Quel est le montant minimum pour un prêt pour avoir une voiture?
+
+- intent: Account_types
+  examples: |
+    - pouvez-vous me parler des différents types de comptes bancaires ?
+    - quels sont les différents types de comptes bancaires ?
+    - combien y a-t-il de types de comptes bancaires ?
+    - combien de types de compte y a-t-il
+    - combien de types de compte avez-vous
+    - dites-moi les types de comptes
+    - parlez-moi des types de comptes
+    - quels sont les types de comptes que vous avez
+    - quels sont les types de comptes ?
+    - combien de types de cartes vous avez ?
+
+- intent: account_opening
+  examples: |
+    - Comment ouvrir un compte
+    - Je veux ouvrir un compte
+    - J'ai besoin d'ouvrir un compte
+    - dites-moi les détails de l'ouverture de compte
+    - parlez-moi de l'ouverture d'un compte
+    - informez-moi de l'ouverture d'un compte
+    - informez-moi sur l'ouverture de compte
+    - comment ouvrir un compte
+    - détails du compte d'ouverture
+    - que dois-je faire pour ouvrir un compte
+
+- intent: benefits_of_account_opening
+  examples: |
+    - quelles facilités j'obtiendrai si j'ouvre mon compte
+    - quelles choses je vais obtenir gratuitement après l'ouverture de mon compte
+    - parlez-moi des avantages de l'ouverture de compte
+    - avantages de l'ouverture de compte
+    - quelles facilités donnez-vous pour ouvrir un compte
+    - quels sont les avantages de l'ouverture de compte dans votre banque
+    - votre banque offre-t-elle des avantages pour ouvrir un compte
+    - offrez-vous des avantages à un nouveau client
+    - quelles installations j'obtiendrai si j'ouvre mon compte
+    - quels sont les avantages de l'ouverture de compte dans votre banque
+    - votre banque offre-t-elle des avantages pour ouvrir un compte
+  
+- intent: savings_account_about
+  examples: |
+    - parlez-moi des comptes d'épargne
+    - qu'est-ce qu'un compte d'épargne ?
+    - C'est quoi un compte d'epargne ?
+
+- intent: saving_account_eligibility
+  examples: |
+    - Dites-moi l'éligibilité pour un compte d'épargne
+    - Quelle est l'éligibilité d'un compte d'épargne
+    - Dites-moi les critères d'éligibilité d'un compte d'épargne !
+    - Quels sont les critères d'éligibilité pour un compte d'épargne
+    - Quelles sont les exigences d'un compte d'épargne
+    - Admissibilité à un compte d'épargne
+    - Qui peut bénéficier d’un compte d'épargne
+    - Exigences relatives aux comptes d'épargne
+
+- intent: documents_for_savingaccount
+  examples: |
+    - quels sont les documents nécessaires pour ouvrir un compte d'epargne?
+    - quels documents sont nécessaires pour l'ouverture du compte d'epargne?
+    - quels documents dois-je avoir pour ouvrir un compte d'epargne?
+    - quels documents sont nécessaires au moment de l'ouverture du compte d'epargne?
+    - combien de documents sont nécessaires pour de l'ouverture du compte d'epargne?
+    - quel type de documents est requis pour un compte d'epargne?
+    - de quel type de document avez-vous besoin pour ouvrir un compte d'epargne
+    - dites-moi l'exigence d'ouverture d'un compte d'epargne
+    - dites-moi l'exigence d'un compte d'epargne
+
+- intent: saving_account_advantages
+  examples: |
+    - à quoi sert un compte d'épargne ?
+    - quels sont les avantages du compte d'épargne ?
+    - Quels sont les avantages du compte d'épargne ? 
+
+- intent: current_account_about
+  examples: | 
+    - parlez-moi du compte bancaire courant
+    - qu'est-ce qu'un compte courant ?
+
+- intent: current_account_eligibility
+  examples: |
+    - Dites-moi l'éligibilité pour un compte courant
+    - Quelle est l'éligibilité d'un compte courant
+    - Dites-moi les critères d'éligibilité d'un compte courant !
+    - Quels sont les critères d'éligibilité pour un compte courant
+    - Quelles sont les exigences d'un compte courant
+    - Admissibilité à un compte courant
+    - Qui peut bénéficier d’un compte courant
+    - Exigences relatives aux comptes courant
+
+- intent: documents_for_currentaccount
+  examples: |
+    - quels sont les documents nécessaires pour ouvrir un compte courant?
+    - quels documents sont nécessaires pour l'ouverture du compte courant?
+    - quels documents dois-je avoir pour ouvrir un compte courant?
+    - quels documents sont nécessaires au moment de l'ouverture du compte courant?
+    - combien de documents sont nécessaires pour ouvrir un compte courant?
+    - quel type de documents est requis pour avoir un compte courant?
+    - de quel type de document avez-vous besoin pour ouvrir un compte courant
+    - quel type de document nécessaire pour avoir un compte courant
+    - dites-moi l'exigence d'ouverture d'un compte courant
+    - dites-moi l'exigence d'un compte courant
+
+- intent: current_account_advantages
+  examples: |
+    - à quoi sert le compte courant ?
+    - quels sont les avantages de la balance des opérations courantes ?
+    - quels sont les avantages du compte courant ?
+
+- intent: checking_account_about
+  examples: |
+    - parlez-moi des comptes chèque 
+    - qu'est-ce qu'un compte chèque  ?
+    - C'est quoi un compte chèque  ?
+
+- intent: checking_account_eligibility
+  examples: |
+    - Dites-moi l'éligibilité pour un compte chèque
+    - Quelle est l'éligibilité d'un compte chèque
+    - Dites-moi les critères d'éligibilité d'un compte chèque !
+    - Quels sont les critères d'éligibilité pour un compte chèque
+    - Quelles sont les exigences d'un compte chèque
+    - Admissibilité à un compte chèque
+    - Qui peut bénéficier d’un compte chèque
+    - Exigences relatives aux comptes chèques
+
+- intent: documents_for_checking_account
+  examples: |
+    - quels sont les documents nécessaires pour ouvrir un compte chèque ?
+    - quels documents sont nécessaires pour l'ouverture du compte chèque ?
+    - quels documents dois-je avoir pour ouvrir un compte chèque ?
+    - quels documents sont nécessaires au moment de l'ouverture du compte chèque ?
+    - combien de documents sont nécessaires pour un compte chéque ?
+    - quel type de documents est requis d'un compte chéque?
+    - de quel type de document avez-vous besoin pour ouvrir un compte chèque 
+    - quel type de document nécessaire afin d'avoir un compte chéque
+    - dites-moi l'exigence d'ouverture d'un compte chèque 
+    - dites-moi l'exigence d'un compte chèque 
+
+- intent: checking_account_advantages
+  examples: |
+    - à quoi sert un compte chèque ?
+    - quels sont les avantages du compte chèque ?
+    - Quels sont les avantages du compte d'chèque ?
+    - les avantage d'un compte cheque s'il vous plait?
+    - compte cheque avantage
+
+- intent: card_types
+  examples: |
+    - Parlez-moi des types de cartes disponibles
+    - quels sont les types de cartes ?
+    - combien y a-t-il de cartes ?
+    - je veux une carte
+    - quelles sont les cartes disponibles ?
+    - combien de type de carte que vous avez ?
+
+- intent: CIBcard_about
+  examples: |
+    - qu'est-ce qu'une carte CIB ?
+    - parlez-moi d'une carte CIB
+    - Quelles sont les fonctionnalités et les avantages de la carte CIB
+    - Dites-moi les fonctionnalités et les avantages de la carte CIB
+    - Quelles sont les fonctionnalités et les avantages de la carte CIB
+    - Dites-moi les fonctionnalités et les avantages de la carte CIB
+
+- intent: Eligibilityof_CIBcard
+  examples: |
+    - Dites-moi l'éligibilité de la carte CIB
+    - Quelle est l'éligibilité de la carte CIB
+    - Dites-moi les critères d'éligibilité de la carte CIB
+    - Quels sont les critères d'éligibilité de la carte CIB
+    - Quelles sont les exigences de la carte CIB
+    - Admissibilité à la carte CIB
+    - Qui peut bénéficier d’une carte CIB
+    - Exigences relatives aux cartes CIB
+    - Critères pour avoir une carte CIB
+    - quelles sont les exigences de la carte CIB
+
+- intent: caracteristicsof_CIBcard
+  examples: |
+    - Quelles sont les caractéristiques de la carte CIB
+    - Parlez-moi des caractéristiques de la carte CIB
+    - Quelles sont les caractéristiques de la carte CIB
+    - Parlez-moi des caractéristiques de la carte CIB
+    - Caractéristiques de la carte CIB
+    - quelles sont les caractéristiques de la carte CIB
+
+- intent: advantagesof_CIBcard
+  examples: |
+    - Quels sont les avantages de la carte cib
+    - Expliquez les avantages de la carte CIB
+    - Quels avantages offrez-vous à votre client pour la carte CIB
+    - Quels sont les avantages de la carte cib
+    - Expliquez les avantages de la carte cib
+    - Quels avantages offrez-vous à votre client pour la carte CIB
+    - Avantages de la carte CIB
+    - Quels sont les avantages de la carte CIB
+    - Quels sont les avantages de la carte cib
+    - Quels avantages offrez-vous à votre client avec la carte CIB
+
+- intent: order_CIBcard
+  examples: | 
+    - Je souhaite commander une carte CIB
+    - Quel formulaire dois-je remplir pour obtenir une carte CIB
+    - création de carte CIB
+    - formulaire pour ouvrir une nouvelle carte CIB
+    - les documents nécessaires pour avoir une carte CIB
+    - quels sont les documents demandés pour une carte CIB 
+    - comment je peux avoir une carte [CIB] ?
+
+- intent: desactivate&reactivate_CIBcard
+  examples: |
+    - Comment désactiver ma carte CIB
+    - Que faire si je souhaite désactiver ma carte CIB
+    - Comment désactiver ma carte CIB
+    - Que faire si je souhaite désactiver ma carte CIB
+    - désactiver ma carte CIB
+    - le processus de désactivation de ma carte CIB
+    - quel est le processus de désactivation de la carte CIB
+    - quel est le processus de désactivation de la carte CIB 
+    - comment puis-je désactiver mes cartes CIB
+    - combien de temps il faudra pour désactiver ma carte CIB
+    - Comment réactiver ma carte CIB
+    - réactiver ma carte CIB
+    - le processus de réactivation de ma carte CIB
+    - quel est le processus de réactivation de la carte CIB
+    - quel est le processus de réactivation de la carte CIB
+    - comment réactiver mes cartes CIB
+    - combien de temps il faudra pour réactiver ma carte CIB
+
+- intent: C-CASHcard_about
+  examples: |
+    - qu'est-ce qu'une carte C-CASH ?
+    - parlez-moi d'une carte C-CASH
+    - Quelles sont les fonctionnalités et les avantages de la carte C-CASH
+    - Dites-moi les fonctionnalités et les avantages de la carte C-CASH
+    - Quelles sont les fonctionnalités et les avantages de la carte C-CASH
+    - Dites-moi les fonctionnalités et les avantages de la carte C-CASH
+
+- intent: Eligibilityof_C-CASH
+  examples: |
+    - Dites-moi l'éligibilité de la carte C-CASH
+    - Quelle est l'éligibilité de la carte C-CASH
+    - Dites-moi les critères d'éligibilité de la carte C-CASH
+    - Quels sont les critères d'éligibilité de la carte C-CASH
+    - Quelles sont les exigences de la carte C-CASH
+    - Admissibilité à la carte C-CASH
+    - Exigences relatives aux cartes C-CASH
+    - Critères de la carte C-CASH
+    - quelles sont les exigences de la carte C-CASH
+
+- intent: caracteristicsof_C-CASHcard
+  examples: |
+    - Quelles sont les caractéristiques de la carte C-CASH
+    - Parlez-moi des caractéristiques de la carte C-CASH
+    - Quelles sont les caractéristiques de la carte C-CASH
+    - Parlez-moi des caractéristiques de la carte C-CASH
+    - Caractéristiques de la carte C-CASH
+    - quelles sont les caractéristiques de la carte C-CASH
+
+- intent: advantagesof_C-CASHcard
+  examples: |
+    - Quels sont les avantages de la carte C-CASH
+    - Expliquez les avantages de la carte C-CASH
+    - Quels avantages offrez-vous à votre client pour la carte C-CASH
+    - Quels sont les avantages de la carte C-CASH
+    - Expliquez les avantages de la carte C-CASH
+    - Quels avantages offrez-vous à votre client pour la carte C-CASH
+    - Avantages de la carte C-CASH
+    - Quels sont les avantages de la carte C-CASH
+    - Quels sont les avantages de la carte C-CASH
+    - Quels avantages offrez-vous à votre client avec la carte C-CASH
+
+- intent: order_C-CASHcard
+  examples: | 
+    - Je souhaite commander une carte C-CASH
+    - Quel formulaire dois-je remplir pour obtenir une carte C-CASH
+    - création de carte C-CASH
+    - formulaire pour ouvrir une nouvelle carte C-CASH s'il vous plait
+    - les documents nécessaires pour avoir une carte C-CASH
+    - quels sont les documents demandés pour une C-CASH ?
+
+- intent: desactivate&reactivate_C-CASHcard
+  examples: |
+    - Comment désactiver ma carte C-CASH
+    - Que faire si je souhaite désactiver ma carte C-CASH
+    - Comment désactiver ma carte C-CASH
+    - Que faire si je souhaite désactiver ma carte C-CASH
+    - désactiver ma carte C-CASH
+    - le processus de désactivation de ma carte C-CASH
+    - quel est le processus de désactivation de la carte C-CASH
+    - quel est le processus de désactivation de la carte C-CASH
+    - comment puis-je désactiver mes cartes C-CASH
+    - combien de temps il faudra pour désactiver ma carte C-CASH
+    - Comment réactiver ma carte C-CASH
+    - réactiver ma carte C-CASH
+    - le processus de réactivation de ma carte C-CASH
+    - quel est le processus de réactivation de la carte C-CASH
+    - quel est le processus de réactivation de la carte C-CASH
+    - comment réactiver mes cartes C-CASH
+    - combien de temps il faudra pour réactiver ma carte C-CASH
+
+- intent: InternationalclassicVisa_card_about
+  examples: |
+    - qu'est-ce qu'une carte carte Internationale classique Visa ?
+    - parlez-moi d'une carte carte Internationale classique Visa
+    - Quelles sont les fonctionnalités et les avantages de la carte Internationale classique Visa
+    - Dites-moi les fonctionnalités et les avantages de cette Internationale classique Visa carte
+    - Quelles sont les fonctionnalités et les avantages de la carte Internationale classique Visa
+    - Dites-moi les fonctionnalités et les avantages de la carte Internationale classique Visa
+
+- intent: Eligibilityof_InternationalclassicVisa_card
+  examples: |
+    - Dites-moi l'éligibilité de la carte internationale classique Visa
+    - Quelle est l'éligibilité de la carte internationale classique Visa
+    - Dites-moi les critères d'éligibilité de la carte internationale classique Visa
+    - Quels sont les critères d'éligibilité de la carte internationale classique Visa
+    - Quelles sont les exigences de la carte internationale classique Visa
+    - Admissibilité à la carte internationale classique Visa
+    - Exigences relatives aux cartes internationale classique Visa
+    - Critères de la carte internationale classique Visa
+    - quelles sont les exigences de la carte internationale classique Visa
+
+- intent: caracteristicsof_InternationalclassicVisa_card
+  examples: |
+    - Quelles sont les caractéristiques de la carte internationale classique Visa
+    - Parlez-moi des caractéristiques de la carte Internationale classique Visa
+    - Quelles sont les caractéristiques de la carte internationale classique Visa
+    - Parlez-moi des caractéristiques de la carte Internationale classique Visa
+    - Caractéristiques de la carte Internationale classique Visa
+    - quelles sont les caractéristiques de la carte Internationale classique Visa
+
+- intent: advantagesof_InternationalclassicVisa_card
+  examples: |
+    - Quels sont les avantages de la carte Internationale classique Visa
+    - Expliquez les avantages de la carte Internationale classique Visa
+    - Quels avantages offrez-vous à votre client pour la carte Internationale classique Visa
+    - Quels sont les avantages de la carte Internationale classique Visa
+    - Expliquez les avantages de la carte Internationale classique Visa
+    - Quels avantages offrez-vous à votre client pour la carte Internationale classique Visa
+    - Avantages de la carte Internationale classique Visa
+    - Quels sont les avantages de la carte Internationale classique Visa
+    - Quels sont les avantages de la carte Internationale classique Visa
+    - Quels avantages offrez-vous à votre client avec la carte Internationale classique Visa
+
+- intent: order_InternationalclassicVisa_card
+  examples: | 
+    - Je souhaite commander une carte Internationale classique Visa
+    - Quel formulaire dois-je remplir pour obtenir une carte Internationale classique Visa
+    - création de carte Internationale classique Visa
+    - formulaire pour ouvrir une nouvelle carte Internationale classique Visa
+    - les documents nécessaires pour avoir une carte Internationale classique Visa
+    - quels sont les documents demandés pour avoir une carte Internationale classique Visa?
+
+- intent: desactivate&reactivate_InternationalclassicVisa_card
+  examples: |
+    - Comment désactiver ma carte Internationale classique Visa
+    - Que faire si je souhaite désactiver ma carte Internationale classique Visa
+    - Comment désactiver ma carte Internationale classique Visa
+    - Que faire si je souhaite désactiver ma carte Internationale classique Visa
+    - désactiver ma carte Internationale classique Visa
+    - le processus de désactivation de ma carte Internationale classique Visa
+    - quel est le processus de désactivation de la carte Internationale classique Visa
+    - quel est le processus de désactivation de la carte Internationale classique Visa
+    - comment puis-je désactiver mes cartes Internationale classique Visa
+    - combien de temps il faudra pour désactiver ma carte Internationale classique Visa
+    - Comment réactiver ma carte carte Internationale classique Visa
+    - réactiver ma carte Internationale classique Visa
+    - le processus de réactivation de ma carte carte Internationale classique Visa
+    - quel est le processus de réactivation de la carte Internationale classique Visa
+    - quel est le processus de réactivation de la carte Internationale classique Visa
+    - comment réactiver mes cartes Internationale classique Visa
+    - combien de temps il faudra pour réactiver ma carte Internationale classique Visa
+
+- intent: InternationalTechnology_card_about
+  examples: |
+    - qu'est-ce qu'une carte technologique internationale ?
+    - parlez-moi de la technologique internationale
+    - Quelles sont les fonctionnalités et les avantages de la carte technologique internationale
+    - Dites-moi les fonctionnalités et les avantages de la carte technologique internationale
+    - Quelles sont les fonctionnalités et les avantages de la carte technologique internationale
+    - Dites-moi les fonctionnalités et les avantages de la carte technologique internationale
+
+- intent: Eligibilityof_InternationalTechnology_card
+  examples: |
+    - Dites-moi l'éligibilité de la carte technologique internationale
+    - Quelle est l'éligibilité de la carte technologique internationale
+    - Dites-moi les critères d'éligibilité de la carte technologique internationale
+    - Quels sont les critères d'éligibilité de la carte technologique internationale
+    - Quelles sont les exigences de la carte technologique internationale
+    - Admissibilité à la carte technologique internationale
+    - Exigences relatives aux cartes technologique internationale
+    - Critères de la carte technologique internationale
+    - quelles sont les exigences de la carte technologique internationale
+
+- intent: caracteristicsof_InternationalTechnology_card
+  examples: |
+    - Quelles sont les caractéristiques de la carte technologique internationale
+    - Parlez-moi des caractéristiques de la carte technologique internationale
+    - Quelles sont les caractéristiques de la carte technologique internationale
+    - Parlez-moi des caractéristiques de la carte technologique internationale
+    - Caractéristiques de la carte technologique internationale
+    - quelles sont les caractéristiques de la carte technologique internationale
+
+- intent: advantagesof_InternationalTechnology_card
+  examples: |
+    - Quels sont les avantages de la carte technologique internationale
+    - Expliquez les avantages de la carte technologique internationale
+    - Quels avantages offrez-vous à votre client pour la carte technologique internationale
+    - Quels sont les avantages de la carte technologique internationale
+    - Expliquez les avantages de la carte technologique internationale
+    - Quels avantages offrez-vous à votre client pour la carte technologique internationale
+    - Avantages de la carte technologique internationale
+    - Quels sont les avantages de la carte technologique internationale
+    - Quels sont les avantages de la carte technologique internationale
+    - Quels avantages offrez-vous à votre client avec la carte technologique internationale
+
+- intent: order_InternationalTechnology_card
+  examples: | 
+    - Je souhaite commander une carte technologique internationale
+    - Quel formulaire dois-je remplir pour obtenir une carte technologique internationale
+    - création de carte technologique internationale
+    - formulaire pour ouvrir une nouvelle carte technologique internationale
+    - les documents nécessaires pour avoir une carte technologique internationale
+    - quels sont les documents demandés?
+
+- intent: desactivate&reactivate_InternationalTechnology_card
+  examples: |
+    - Comment désactiver ma carte technologique internationale
+    - Que faire si je souhaite désactiver ma carte technologique internationale
+    - Comment désactiver ma carte technologique internationale
+    - Que faire si je souhaite désactiver ma carte technologique internationale 
+    - désactiver ma carte technologique internationale
+    - le processus de désactivation de ma carte technologique internationale
+    - quel est le processus de désactivation de la carte technologique internationale
+    - quel est le processus de désactivation de la carte technologique internationale
+    - comment puis-je désactiver mes cartes technologique internationale
+    - combien de temps il faudra pour désactiver ma carte technologique internationale
+    - Comment réactiver ma carte technologique internationale
+    - réactiver ma carte technologique internationale
+    - le processus de réactivation de ma carte technologique internationale
+    - quel est le processus de réactivation de la carte technologique internationale
+    - quel est le processus de réactivation de la carte technologique internationale
+    - comment réactiver mes cartes technologique internationale
+    - combien de temps il faudra pour réactiver ma carte technologique internationale
+
+- intent: card_Loss 
+  examples: |
+    - Que dois-je faire si ma carte a été égarée
+    - En cas de perte de la carte, où dois-je appeler
+    - En cas de carte perdue / volée / vol, où dois-je appeler
+    - Que dois-je faire si ma carte a été égarée
+    - Si ma carte est égarée, où dois-je me plaindre?
+    - En cas de perte de la carte, que dois faire
+    - En cas de vol de la carte, où dois-je appeler
+    - En cas de vol de carte, où dois-je appeler
+    - Si ma carte est endommagée, puis-je faire
+    - Si ma carte est endommagée, où dois-je appeler
+    - Si ma carte est volée quelle est la procédure pour bloquer la carte
+    - Si ma carte est perdue, quelle est la procédure pour bloquer la carte
+    - Si ma carte est égarée quelle est la procédure pour bloquer la carte
+    - Perte de carte
+
+- intent: thankyou
+  examples: |
+    - Merci, au revoir
+    - ok merci au revoir
+    - Merci bye
+    - euh bien merci au revoir
+    - Merci
+    - et c'est tout merci et au revoir
+    - d'accord, merci
+    - Merci
+    - Merci au revoir
+    - Merci et au revoir
+    - Merci!
+    - Génial, tu es un bon robot!
+
+- intent: help
+  examples: |
+    - Que pouvez-vous faire?
+    - que puis-je vous demander?
+    - avec quoi pouvez-vous m'aider?
+    - aide-moi
+    - comment utiliser ceci
+    - comment pouvez vous m'aider
+    - Que pouvez-vous faire?
+    - J'ai besion d'aide?
+
+- intent: ask_transfer_charge
+  examples: |
+    - les transferts coûtent-ils quelque chose ?
+    - y a-t-il des frais de transfert ?
+    - Y a-t-il des frais de transfert svp
+    - les transferts coûtent-ils quelque chose svp ?
+    - y a-t-il des frais de transfert
+    - à combien s'élèvent les frais de transfert
+    - quel est le coût du transfert d'argent
+    - que suis-je facturé lors du transfert d'argent
+    - allez-vous me facturer pour cet échange
+    - quel est le prix de transfert pour ce compte
+    - à combien s'élèvent les frais pour déplacer mon argent
+    - si j'envoie de l'argent à quelqu'un, serai-je facturé en plus pour cela ?
+    - y a t il des frais lorsque j'envoie de l'argent à quelqu'un
+    - quels sont les frais pour envoyer de l'argent à quelqu'un d'autre
+    - y a-t-il des frais de transaction que je devrais connaître ?
+    - me parler des frais de transfert
+
+- intent: check_balance
+  examples: |
+    - Combien d'argent j'ai dans mon compte?
+    - Combien j'ai de solde dans ma compte [bancaire](account_type) ?
+    - quel est le [solde](amount-of-money)?
+    - Quel est le [solde actuel](amount-of-money)?
+    - Combien ai-je sur ce compte ?
+    - Quel est le [solde] (amout-of-money) sur ce compte ?
+    - Combien d'argent reste-t-il sur ce compte ?
+    - quel est mon [solde](amount-of-money) sur ma compte
+    - quel est mon [solde](amount-of-money) sur cette compte ?
+    - quel est mon [solde](amount-of-money) ?
+    - quel est mon [solde](amount-of-money) dans ma [compte bancaire]
+    - quel est le [solde](amount-of-money) dans ma [compte bancaire] ?
+    - quel est le [solde](amount-of-money) dans ma [compte bancaire]
+    - Quelle est le [solde](amount-of-money) sur ma [carte de crédit](account_type)
+    - Combien d'argent j'ai sur mes [cartes de crédit](account_type)
+    - Montrez moi le [solde](amount-of-money) de la [carte de crédit](account_type) 
+    - Quel est le [solde](amount-of-money) sur mon compte [credit](account_type)
+    - Quel est mon [solde](amount-of-money) dans ma [carte](account_type) [cib](credit_card)
+    - Montrez-moi mo [compte courant](credit_card) [solde](amount-of-money)
+    - quel est mon [solde](amount-of-money) sur ma [carte de crédit](account_type) [c cash](credit_card)  ?
+    - quel est le [solde] (amount-of-money) de ma [carte](type_de_compte) [compte chéque](credit_card) ?
+    - quel est le [solde](amount-of-money) dans ma carte [visa](credit_card) ?
+    - vérifier mn [solde](amount-of-money) sur ma [carte de crédit]{"entity": "account_type", "value": "credit"} 
+    - Pouvez-vous m'indiquer le [solde](amount-of-money) de mon compte  ?
+    - Bonjour, je voudrais savoir combien d'argent il y a dans mon compte
+    - salut, quel est mon solde s'il te plait
+    - alors.... quel est mon [solde](amount-of-money) ?
+    - quel est mon [solde actuel](amount-of-money)
+    - Quel est mon [solde](amount-of-money) ?
+    - Combien d'argent ai-je ?
+    - Bonjour, j'ai besoin de savoir combien d'argent se trouve sur mon compte [cheque](account_type)
+    - Solde s'il vous plait
+
+- intent: check_earnings
+  examples: |
+    - combien j'ai sur mon compte
+    - Combien d'argent est allé sur mon compte le mois dernier ?
+    - Combien d'argent j'ai gagné l'année dernière ?
+    - Combien j'ai gagné le mois dernier ?
+    - Combien d'argent ai-je gagné la semaine dernière ?
+    - combien a été déposé sur mon compte le mois dernier ?
+    - combien a été déposé sur mon compte au cours des deux dernières semaines ?
+    - chèques de caution de la semaine dernière
+    - total des dépôts sur l'année dernière
+    - combien a été déposé en janvier
+    - combien d'argent ai-je gagné ?
+    - qu'est-ce que j'ai gagné ?
+    - Combien ai-je gagné ?
+    - combien j'ai gagné
+    - je suis deja riche ?
+    - combien d'argent circule sur mon compte
+    - combien d'argent y a-t-il sur le compte  ?
+    - montre-moi combien j'ai gagné la semaine dernière
+    - le loyer est dû bientôt combien j'ai sur mon compte svp 
+
+- intent: inform
+  examples: |
+    - 10dt
+    - 5000
+    - 500
+    - 100dt
+    - 500dt
+    - 100 dinars
+    - 1000 dinar tunisien
+    - demain
+    - la semaine prochaine
+    - hier
+    - pour aujourd'hui
+    - La semaine dernière
+    - le mois dernier
+    - les deux derniers jours
+    - les deux dernières semaines
+    - chez [Jumia](vendor_name)
+    - [Télécom](vendor_name)
+    - chez [amazon](vendor_name)
+    - à [Telecom](vendor_name)
+    - [Jumia](vendor_name)
+    - [Amazon](vendor_name)
+    - [Jumia](vendor_name)
+    - Je veux payer le [solde actuel](amount-of-money)
+    - [solde actuel](amount-of-money)
+    - [complet](amount-of-money)
+    - le [solde total](amount-of-money)
+    - [solde minimum](amount-of-money)
+    - Je veux payer le [solde minimum](amount-of-money)
+    - le [solde actuel](amount-of-money)
+    - le [solde minimum](amount-of-money)
+    - mon [solde minimum](amount-of-money)
+    - mon [solde actuel](amount-of-money)
+    - [carte](account_type) [c cash](credit_card) 
+    - toutes les [cartes](account_type)
+    - [carte](account_type) [visa](credit_card) 
+    - [carte technologie](credit_card)
+    - [cib](credit_card)
+    - [carte de crédit](account_type) [cib](credit_card) 
+    - ma [carte de credit](account_type) [visa](credit_card) 
+    - ma [carte de crédit](account_type) [visa](credit_card)
+    - Ma [carte de crédit](account_type) [STB banque](credit_card)
+    - ma [carte](account_type) [mastercard](credit_card) 
+    - ma [carte](account_type) [STB banque](credit_card)
+    - vers ma [carte](account_type) [cib](credit_card)
+    - vers ma [carte](account_type) [c cash](credit_card)
+    - vers ma [carte](account_type) [visa](credit_card)
+    - pour le dimanche
+    - pour vendredi
+    - pour demain
+    - pour samedi
+    - Je veux payer le [solde minimum](amount-of-money) sur ma [carte de credit](account_type) [cib](credit_card) aujourd'hui
+    - aujourd'hui
+    - une centaine de dinars
+    - [mastercard](credit_card)
+    - [c cash](credit_card)
+    - [cib](credit_card)
+    - ma [carte de credit]{"entity": "account_type", "value": "credit"} se terminant par 4321
+    - Ma [visa](credit_card)
+    - Un ami.
+    - [Ala](PERSON) ?
+    - aujourd'hui s'il vous plaît
+    - Mon [cib](credit_card)
+    - [Bob](PERSON)
+    - [faouzi](PERSON)
+    - [Sami](PERSON)
+    - [Farah](PERSON)
+    - [Soujoud](PERSON)
+    - [Saif](PERSON)
+    - [Iyed](PERSON)
+    - [Hayet](PERSON)
+    - à mon [frère](PERSON)
+    - à ma [soeur](PERSON)
+    - mon [père](PERSON)
+    - Ahmed Ahmed
+    - Imed Omda
+    - Ameni s'il te plait
+    - Aymen
+    - Sarah
+    - ma femme
+    - Angham
+    - Foued
+    - tous
+
+- intent: pay_cc
+  examples: |
+    - Je veux payer par [carte de crédit](account_type)
+    - Je veux payer par la [carte](account_type) aujourd'hui
+    - Payer par ma [carte](account_type)
+    - Je veux payer ma facture par ma [c cash](credit_card)
+    - Je veux payer ma facture par ma [cib](credit_card)
+    - Payer par ma [visa](credit_card)
+    - Je veux payer ma facture par ma carte [visa](credit_card)
+    - Payer ma [mastercard](credit_card)
+    - Je veux payer ma facture [MasterCard](credit_card)
+    - Je veux payer ma facture par la [carte de crédit](account_type)
+    - Je souhaite payer le [solde actuel](amount-of-money) par ma [carte de crédit](account-type)
+    - Veuillez programmer un paiement par ma [carte de crédit](account_type) pour le 12 avril
+    - Puis-je programmer un paiement par ma [carte](account_type) pour demain ?
+    - Payer mon [solde minimum](amount-of-money) s'il vous plaît
+    - je voudrais payer a [carte de crédit]{"entity": "account_type", "value": "credit"}
+    - Je souhaite également payer ma facture [visa](credit_card)
+    - Payer par ma [carte]{"entity": "account_type", "value": "credit"}, s'il vous plaît
+    - j'aimerais payer ma facture
+    - je peux payer ma [carte de crédit]{"entity": "account_type", "value": "credit"} ?
+    - payer par ma [carte de credit]{"entity": "account_type", "value": "credit"}
+    - je veux payer par ma [carte]{"entity": "account_type", "value": "credit"}
+    - payer une facture
+
+- intent: search_transactions
+  examples: |
+    - combien j'ai dépensé chez [amazon](vendor_name) cette semaine ?
+    - quelles sont mes dépenses typiques chez [Amazon](vendor_name) ?
+    - Je veux consulter l'historique de mes dépenses
+    - combien j'ai dépensé chez [amazon](vendor_name) la semaine dernière ?
+    - Je dois vérifier l'historique de mes dépenses
+    - Je veux vérifier mes dépenses
+    - Je souhaite consulter l'historique de mes dépenses chez [Jumia](vendor_name)
+    - je veux vérifier l'historique de mes dépenses
+    - je veux voir l'historique de mes transactions
+    - Je veux rechercher mes transactions passées
+    - puis-je rechercher mon historique de transactions
+    - puis-je consulter les transactions passées
+    - Je veux rechercher mes transactions avec [Jumia](vendor_name)
+    - puis-je consulter mes transactions avec [stb](vendor_name)
+    - combien ai-je dépensé chez [Jumia](vendor_name) le mois dernier ?
+    - qu'est-ce que j'ai dépensé le mois dernier ?
+    - Combien ai-je dépensé le mois dernier ?
+    - Qu'ai-je dépensé chez [Carrefour](vendor_name) le mois dernier ?
+    - Qu'ai-je dépensé chez [Carrefour](vendor_name) l'année dernière ?
+    - combien ai-je dépensé chez [Jumia](vendor_name) l'année dernière
+    - Oui! Combien j'ai dépensé pour [Jumia](vendor_name) le mois dernier ?
+    - à quels endroits j'ai dépensé de l'argent ?
+    - Combien j'ai dépensé chez [amazon](vendor_name) ?
+    - Oh, combien j'ai réellement dépensé chez [telecom](vendor_name) le mois dernier ? J'aimerais savoir.
+    - Pouvez-vous me dire combien j'ai dépensé chez [Jumia](vendor_name) ce mois-ci ?
+    - où j'ai dépensé le plus d'argent le mois dernier ?
+
+- intent: transfer_money
+  examples: |
+    - Je veux payer [Aziz](PERSON)
+    - Je souhaite transférer 100 dt à [Amen](PERSON)
+    - puis-je transférer de l'argent à [Saly](PERSON)
+    - Je veux transférer de l'argent
+    - je veux payer quelqu'un
+    - puis-je payer quelqu'un
+    - J'ai besoin de transférer de l'argent à un ami
+    - puis-je transférer de l'argent à ma [maman](PERSON)
+    - Je veux payer [Bobo](PERSON)
+    - payer mon ami
+    - Transférer de l'argent
+    - Je souhaite transférer 100 dt à [Ahmed](PERSON)
+    - je souhaite transférer 400 dinars à [Amine](PERSON)
+    - Je veux payer [Salma](PERSON)
+    - transférer 60 dt à [Jassem](PERSON)
+    - payer [Maram](PERSON)
+    - payez [Saif](PERSON) s'il vous plaît
+    - je peux transférer de l'argent à [Karim](PERSON) ?
+    - Payer [Sawssen](PERSON) 60 Euros
+    - payer [Mouna](PERSON) 60dt
+    - transférer 26dt à [Asma](PERSON)
+    - besoin de transférer de l'argent
+    - Je veux transférer à [Saly](PERSON)
+    - Payer [Imed](PERSON) 60dt
+    - Payez 50 dinar tunisien à [Anaghime](PERSON)
+    - Ok paye [Emna](PERSON)
+    - payer [Assli](PERSON)
+    - je veux transférer 100 dinars à [mon fere](PERSON)
+    - je veux transférer 100 dinars à ma [fille](PERSON)
+    - je veux transférer de l'argent s'il vous plaît
+    - je veux dire que je veux transférer de l'argent
+    - Je dois payer un ami.
+    - transférer de l'argent à [Sarah](PERSON)
+    - transférer de l'argent à [sarha](PERSON)
+    - J'ai besoin de transférer de l'argent à ma grand-mère [Judith](PERSON).
+    - je veux transférer de l'argent à [Laith](PERSON)
+    - J'ai besoin d'effectuer un transfert urgent à [Anis](PERSON), pouvez-vous le faire ?
+    - Ahh, d'accord donc je veux faire un transfert à [Malek](PERSON).
+    - je peux transférer de l'argent à un ami ?
+    - Je dois transférer de l'argent à [Molka](PERSON), mon fils
+    - J'ai besoin d'envoyer de l'argent à mon enfant
+    - J'ai besoin de transférer de l'argent
+    - envoyer 50dt à [Molka](PERSON)
+    - J'ai besoin de transférer de l'argent à mon collègue qui a payé le déjeuner
+    - Salut j'aime envoyer de l'argent
+    - J'aimerais envoyer 50 dinars à [Jihed](PERSON)
+    - Bonjour, j'aime envoyer de l'argent à [Jihed](PERSON)
+    - Veuillez transférer 50dt à [Ahmed](PERSON)
+    - Je souhaite transférer de l'argent à [Mohamed](PERSON)
+    - J'aimerais transférer 50dt à [Mayssa](PERSON)
+
+- intent: check_recipients
+  examples: |
+    - A qui je peux envoyer de l'argent ?
+    - Qui sont mes destinataires connus
+    - Montrez-moi ma liste de destinataires
+    - Afficher la liste des destinataires
+    - Montrez-moi les personnes auxquelles je peux envoyer de l'argent
+    - Qui est un bénéficiaire valide
+    - qui puis-je payer ?
+    - qui puis-je transférer de l'argent ?
+    - qui est dans ma liste de destinataires ?
+    - à qui je peux transférer de l'argent ?
+    - Qui est sur ta liste ?
+    - qui est dans ma liste de destinataires connus ?
+    - A qui puis-je transférer de l'argent ?
+    - A qui puis-je transférer de l'argent ?
+    - D'accord. A qui puis-je transférer de l'argent alors ?
+    - puis-je voir la liste des destinataires connus ?
+    - dis-moi avec qui je peux partager mon argent
+    - quelle est ma liste de destinataires
+    - puis-je envoyer de l'argent à n'importe qui ?
+    - à qui exactement puis-je envoyer de l'argent
+    - si je veux transférer de l'argent puis-je l'envoyer à n'importe qui
+    - montre moi ma liste d'envoi d'argent
+
+- synonym: credit
+  examples: |
+    - carte
+    - carte de credit
+    - carte de crédit
+    - Carte
+    - Carte de crédit
+    - ma carte de credit
+    - ma carte de créit
+- synonym: cib
+  examples: |
+    - cib
+    - CIB
+    - Cib
+- synonym: c cash
+  examples: |
+    - C cash
+    - c-cash
+    - c cash
+- synonym: current balance
+  examples: |
+    - solde
+    - solde total
+    - le total du solde
+
+
+
+
+
+
+

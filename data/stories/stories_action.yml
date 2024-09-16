@@ -1,0 +1,388 @@
+version: "2.0"
+stories:
+
+- story: tabletime consultant
+  steps:
+  - intent: timetable
+  - action: utter_timetable
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: saving account
+  steps: 
+  - intent: savings_account_about
+  - action: utter_savings_account_about
+
+- story: saving account elig
+  steps: 
+  - intent: saving_account_eligibility
+  - action: utter_saving_account_eligibility
+
+- story: document for saving account
+  steps:
+  - intent: documents_for_savingaccount
+  - action: utter_documents_for_savingaccount
+
+- story: saving account adv
+  steps: 
+  - intent: saving_account_advantages
+  - action: utter_saving_account_advantages
+
+- story: account types
+  steps: 
+  - intent: Account_types
+  - action: utter_Account_types
+
+- story: current account
+  steps: 
+  - intent: current_account_about
+  - action: utter_current_account_about
+
+- story: current account elig
+  steps: 
+  - intent: current_account_eligibility
+  - action: utter_current_account_eligibility
+
+- story: document for current account
+  steps:
+  - intent: documents_for_currentaccount
+  - action: utter_documents_for_currentaccount
+
+- story: current account advantage
+  steps: 
+  - intent: current_account_advantages
+  - action: utter_current_account_advantages
+
+- story: checking account
+  steps:
+  - intent: checking_account_about
+  - action: utter_checking_account_about
+
+- story: checking account elig
+  steps: 
+  - intent: checking_account_eligibility
+  - action: utter_checking_account_eligibility
+
+- story: documents for checking account
+  steps: 
+  - intent: documents_for_checking_account
+  - action: utter_documents_for_checking_account
+
+- story: chrcking account adv
+  steps: 
+  - intent: checking_account_advantages
+  - action: utter_checking_account_advantages
+
+- story: card types
+  steps:
+  - intent: card_types
+  - action: utter_card_types
+
+- story: CIBcard about
+  steps:
+  - intent: CIBcard_about
+  - action: utter_CIBcard_about
+
+- story: Eligibility of CIBcard
+  steps: 
+  - intent: Eligibilityof_CIBcard
+  - action: utter_Eligibilityof_CIBcard
+
+- story: caracteristics of CIBcard
+  steps: 
+  - intent: caracteristicsof_CIBcard
+  - action: utter_caracteristicsof_CIBcard
+
+- story: advantages of CIBcard
+  steps: 
+  - intent: advantagesof_CIBcard
+  - action: utter_advantagesof_CIBcard
+
+- story: order CIBcard
+  steps: 
+  - intent: order_CIBcard
+  - action: action_dynamic_link
+
+- story: desactivate & reactivate CIBcard
+  steps: 
+  - intent: desactivate&reactivate_CIBcard
+  - action: utter_desactivate&reactivate_CIBcard
+
+- story: C-CASHcard about
+  steps:
+  - intent: C-CASHcard_about
+  - action: utter_C-CASHcard_about
+
+- story: Eligibility of C-CASHcard
+  steps: 
+  - intent: Eligibilityof_C-CASH
+  - action: utter_Eligibilityof_C-CASH
+
+- story: caracteristics of C-CASHcard
+  steps: 
+  - intent: caracteristicsof_C-CASHcard
+  - action: utter_caracteristicsof_C-CASHcard
+
+- story: advantages of C-CASHcard
+  steps: 
+  - intent: advantagesof_C-CASHcard
+  - action: utter_advantagesof_C-CASHcard
+
+- story: order C-CASHcard
+  steps: 
+  - intent: order_C-CASHcard
+  - action: utter_order_C-CASHcard
+
+- story: desactivate & reactivate C-CASHcard
+  steps:
+  - intent: desactivate&reactivate_C-CASHcard
+  - action: utter_desactivate&reactivate_C-CASHcard
+
+- story: International classic Visa card about
+  steps: 
+  - intent: InternationalclassicVisa_card_about
+  - action: utter_InternationalclassicVisa_card_about
+
+- story: Eligibility of International classic Visa card
+  steps: 
+  - intent: Eligibilityof_InternationalclassicVisa_card
+  - action: utter_Eligibilityof_InternationalclassicVisa_card
+
+- story: caracteristics of International classic Visa card
+  steps:
+  - intent: caracteristicsof_InternationalclassicVisa_card
+  - action: utter_caracteristicsof_InternationalclassicVisa_card
+
+- story: advantages of International classic Visa card
+  steps: 
+  - intent: advantagesof_InternationalclassicVisa_card
+  - action: utter_advantagesof_InternationalclassicVisa_card
+
+- story: order International classic Visa card
+  steps: 
+  - intent: order_InternationalclassicVisa_card
+  - action: utter_order_InternationalclassicVisa_card
+
+- story: desactivate & reactivate International classic Visa card
+  steps: 
+  - intent: desactivate&reactivate_InternationalclassicVisa_card
+  - action: utter_desactivate&reactivate_InternationalclassicVisa_card
+
+- story: International Technology card about
+  steps: 
+  - intent: InternationalTechnology_card_about
+  - action: utter_InternationalTechnology_card_about
+
+- story: Eligibility of International Technology card
+  steps: 
+  - intent: Eligibilityof_InternationalTechnology_card
+  - action: utter_Eligibilityof_InternationalTechnology_card
+
+- story: caracteristics of International Technology card
+  steps: 
+  - intent: caracteristicsof_InternationalTechnology_card
+  - action: utter_caracteristicsof_InternationalTechnology_card
+
+- story: advantages of International Technology card
+  steps: 
+  - intent: advantagesof_InternationalTechnology_card
+  - action: utter_advantagesof_InternationalTechnology_card
+
+- story: order International Technology card
+  steps: 
+  - intent: order_InternationalTechnology_card
+  - action: utter_order_InternationalTechnology_card
+
+- story: desactivate & reactivate International Technology card
+  steps: 
+  - intent: desactivate&reactivate_InternationalTechnology_card
+  - action: utter_desactivate&reactivate_InternationalTechnology_card
+
+- story: type of loan
+  steps:
+  - intent: types_of_loans
+  - action: utter_loan_types
+
+- story: condition loan approvel
+  steps: 
+  - intent: condition_loan_approvel
+  - action: utter_condition_loan_approvel
+
+- story: extension of loan tenure
+  steps:
+  - intent: extension_of_loan_tenure
+  - action: utter_extension_of_loan_tenure
+
+- story: loan_home_about
+  steps:
+  - intent: loan_home_about
+  - action: utter_loan_home_about
+
+- story: guarantees_home_loan_required
+  steps:
+  - intent: guarantees_home_loan_required
+  - action: utter_guarantees_home_loan_required
+
+- story: home_loan_rate
+  steps:
+  - intent: home_loan_rate
+  - action: utter_home_loan_rate
+
+- story: documents_required_for_homeloan
+  steps: 
+  - intent: documents_required_for_homeloan
+  - action: utter_documents_of_loan_to_the_home_required
+
+- story: Repayment_loanhome_period
+  steps: 
+  - intent: Repayment_loanhome_period
+  - action: utter_Repayment_loanhome_period
+
+- story: loan_home_max_amount
+  steps: 
+  - intent: loan_home_max_amount
+  - action: utter_loan_home_max_amount 
+
+- story: loan_home_min_amount
+  steps: 
+  - intent: loan_home_min_amount 
+  - action: utter_loan_home_min_amount 
+
+- story: credit EslahMaskan  about
+  steps:
+  - intent: credit_EslahMaskan_about
+  - action: utter_credit_EslahMaskan_about
+
+- story: guarantees_credit_EslahMaskan_required
+  steps:
+  - intent: guarantees_credit_EslahMaskan_required
+  - action: utter_guarantees_credit_EslahMaskan_required
+
+- story: credit_EslahMaskan_rate
+  steps: 
+  - intent: credit_EslahMaskan_rate
+  - action: utter_credit_EslahMaskan_rate
+
+- story: documents_required_for_credit_EslahMaskan
+  steps: 
+  - intent: documents_required_for_EslahMaskan_credit
+  - action: utter_documents_required_for_EslahMaskan_credit
+
+- story: Repayment_credit_EslahMaskan_period
+  steps:
+  - intent: Repayment_EslahMaskan_credit_period
+  - action: utter_Repayment_EslahMaskan_credit_period
+
+- story: credit_EslahMaskan_period
+  steps: 
+  - intent: EslahMaskan_credit_period
+  - action: utter_EslahMaskan_credit_period
+
+- story: credit_EslahMaskan_max_amount
+  steps:
+  - intent: EslahMaskan_credit_max_amount
+  - action: utter_EslahMaskan_credit_max_amount
+
+- story: credit_EslahMaskan_min_amount
+  steps:
+  - intent: EslahMaskan_credit_min_amount
+  - action: utter_EslahMaskan_credit_min_amount
+
+- story: direct_credit about
+  steps: 
+  - intent: direct_credit_about
+  - action: utter_direct_credit_about
+
+- story: guarantee direct_credit
+  steps: 
+  - intent: guarantees_directcredit_required
+  - action: utter_guarantees_directcredit_required
+
+- story: direct_credit rate
+  steps: 
+  - intent: directcredit_rate
+  - action: utter_directcredit_rate
+
+- story: documents_required_for_direct_credit
+  steps: 
+  - intent: documents_required_for_directcredit
+  - action: utter_documents_required_for_directcredit
+
+- story: Repayment_direct_credit_period
+  steps: 
+  - intent: Repayment_directcredit_period
+  - action: utter_Repayment_directcredit_period
+
+- story: direct_credit_period
+  steps:
+  - intent: directcredit_period
+  - action: utter_directcredit_period
+
+- story: direct_credit_max_amount
+  steps: 
+  - intent: directcredit_max_amount
+  - action: utter_directcredit_max_amount
+
+- story: direct_credit_min_amount
+  steps:
+  - intent: directcredit_min_amount
+  - action: utter_directcredit_min_amount
+
+- story: car_loan about
+  steps: 
+  - intent: car_loan_details
+  - action: utter_car_loan_details
+
+- story: guarantee car_loan_required
+  steps:
+  - intent: guarantees_carloan_required
+  - action: utter_guarantees_carloan_required
+
+- story: car_loan rate
+  steps:
+  - intent: interest_rate_car_loan
+  - action: utter_interest_rate_car_loan
+
+- story: documents_required_for_car_loan
+  steps: 
+  - intent: car_loan_documents_required
+  - action: utter_car_loan_documents_required
+
+- story: Repayment_car_loan_period
+  steps:
+  - intent: Repayment_Carloan_period
+  - action: utter_Repayment_Carloan_period
+
+- story: car_loan_period
+  steps: 
+  - intent: period_of_car_loan
+  - action: utter_period_of_car_loan
+
+- story: car_loan_max_amount
+  steps: 
+  - intent: car_loan_amount_max
+  - action: utter_car_loan_amount_max
+
+- story: car_loan_min_amount
+  steps:
+  - intent: car_loan_amount_min
+  - action: utter_car_loan_amount_min
+
+- story: Atm loactor 
+  steps:
+  - intent: atm_locator
+  - action: utter_atm_locator
+
+- story: Branch loactor 
+  steps:
+  - intent: branch_locator
+  - action: utter_branch_locator
+
+- story: losing card
+  steps:
+  - intent: card_Loss
+  - action: utter_card_Loss
+
