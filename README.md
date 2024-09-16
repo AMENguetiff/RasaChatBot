@@ -1,4 +1,5 @@
-## Financial Services Chat Bot
+## Financial Services Chat Bot  ![image](https://github.com/user-attachments/assets/c8662791-ce10-4e2a-81f7-0b876c757ce8)
+
 This is an example chatbot demonstrating how to build AI assistants for financial services and banking. It includes pre-built intents, actions, and stories for handling conversation flows like checking spending history and transferring money to another account, asking for services ect..
 
 
@@ -45,7 +46,7 @@ config.yml - training configurations for the NLU pipeline and policy ensemble
 
 tests/ - end-to-end tests
 
-Things you can ask the bot
+### Things you can ask the bot
 
 The bot currently has some skills. You can ask it to:
 
