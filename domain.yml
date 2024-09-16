@@ -1,0 +1,823 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- inform:
+    use_entities: true
+- branch_locator:
+    use_entities: true
+- atm_locator:
+    use_entities: true
+- location_Unknown:
+    use_entities: true
+- types_of_loans:
+    use_entities: true
+- condition_loan_approvel:
+    use_entities: true
+- extension_of_loan_tenure:
+    use_entities: true
+- loan_home_about:
+    use_entities: true
+- guarantees_home_loan_required:
+    use_entities: true
+- home_loan_rate:
+    use_entities: true
+- documents_required_for_homeloan:
+    use_entities: true
+- Repayment_loanhome_period:
+    use_entities: true
+- loan_home_max_amount:
+    use_entities: true
+- loan_home_min_amount:
+    use_entities: true
+- direct_credit_about:
+    use_entities: true
+- guarantees_directcredit_required:
+    use_entities: true
+- directcredit_rate:
+    use_entities: true
+- documents_required_for_directcredit:
+    use_entities: true
+- Repayment_directcredit_period:
+    use_entities: true
+- directcredit_period:
+    use_entities: true
+- directcredit_max_amount:
+    use_entities: true
+- directcredit_min_amount:
+    use_entities: true
+- credit_EslahMaskan_about:
+    use_entities: true
+- guarantees_credit_EslahMaskan_required:
+    use_entities: true
+- credit_EslahMaskan_rate:
+    use_entities: true
+- documents_required_for_EslahMaskan_credit:
+    use_entities: true
+- Repayment_EslahMaskan_credit_period:
+    use_entities: true
+- EslahMaskan_credit_period:
+    use_entities: true
+- EslahMaskan_credit_max_amount:
+    use_entities: true
+- EslahMaskan_credit_min_amount:
+    use_entities: true
+- car_loan_details:
+    use_entities: true
+- guarantees_carloan_required:
+    use_entities: true
+- interest_rate_car_loan:
+    use_entities: true
+- car_loan_documents_required:
+    use_entities: true
+- Repayment_Carloan_period:
+    use_entities: true
+- period_of_car_loan:
+    use_entities: true
+- car_loan_amount_max:
+    use_entities: true
+- car_loan_amount_min:
+    use_entities: true
+- Account_types:
+    use_entities: true
+- account_opening:
+    use_entities: true
+- minimum_balance:
+    use_entities: true
+- benefits_of_account_opening:
+    use_entities: true
+- documents_for_account:
+    use_entities: true
+- savings_account_about:
+    use_entities: true
+- saving_account_eligibility:
+    use_entities: true
+- documents_for_savingaccount:
+    use_entities: true
+- saving_account_advantages:
+    use_entities: true
+- current_account_about:
+    use_entities: true
+- current_account_eligibility:
+    use_entities: true
+- documents_for_currentaccount:
+    use_entities: true
+- current_account_advantages:
+    use_entities: true
+- checking_account_about:
+    use_entities: true
+- checking_account_eligibility:
+    use_entities: true
+- documents_for_checking_account:
+    use_entities: true
+- checking_account_advantages:
+    use_entities: true
+- card_types:
+    use_entities: true
+- card_validity:
+    use_entities: true
+- CIBcard_about:
+    use_entities: true
+- Eligibilityof_CIBcard:
+    use_entities: true
+- caracteristicsof_CIBcard:
+    use_entities: true
+- advantagesof_CIBcard:
+    use_entities: true
+- order_CIBcard:
+    use_entities: true
+- CIBcard_transaction_limit:
+    use_entities: true
+- desactivate&reactivate_CIBcard:
+    use_entities: true
+- C-CASHcard_about:
+    use_entities: true
+- Eligibilityof_C-CASH:
+    use_entities: true
+- caracteristicsof_C-CASHcard:
+    use_entities: true
+- advantagesof_C-CASHcard:
+    use_entities: true
+- order_C-CASHcard:
+    use_entities: true
+- desactivate&reactivate_C-CASHcard:
+    use_entities: true
+- InternationalclassicVisa_card_about:
+    use_entities: true
+- Eligibilityof_InternationalclassicVisa_card:
+    use_entities: true
+- caracteristicsof_InternationalclassicVisa_card:
+    use_entities: true
+- advantagesof_InternationalclassicVisa_card:
+    use_entities: true
+- order_InternationalclassicVisa_card:
+    use_entities: true
+- InternationalclassicVisa_card_transaction_limit:
+    use_entities: true
+- desactivate&reactivate_InternationalclassicVisa_card:
+    use_entities: true
+- InternationalTechnology_card_about:
+    use_entities: true
+- Eligibilityof_InternationalTechnology_card:
+    use_entities: true
+- caracteristicsof_InternationalTechnology_card:
+    use_entities: true
+- advantagesof_InternationalTechnology_card:
+    use_entities: true
+- order_InternationalTechnology_card:
+    use_entities: true
+- InternationalTechnology_card_transaction_limit:
+    use_entities: true
+- desactivate&reactivate_InternationalTechnology_card:
+    use_entities: true
+- card_Loss:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- help:
+    use_entities: true
+- timetable:
+    use_entities: true
+- ask_transfer_charge:
+    use_entities: true
+- search_transactions:
+    use_entities: []
+- check_balance:
+    use_entities:
+    - account_type
+    - credit_card
+- check_earnings:
+    use_entities: []
+- check_recipients:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- session_start:
+    use_entities: true
+- restart:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- transfer_money:
+    use_entities: []
+- pay_cc:
+    use_entities: []
+entities:
+- amount-of-money
+- credit_card
+- payment_date
+- vendor_name
+- time
+- PERSON
+- number
+- account_type
+- search_type
+- account-type
+- type_de_compte
+- user_location
+slots:
+  AA_CONTINUE_FORM:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  PERSON:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  account_type:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  amount-of-money:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  amount_transferred:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: 0
+    auto_fill: true
+    influence_conversation: false
+  credit_card:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  currency:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: DT
+    auto_fill: true
+    influence_conversation: false
+  end_time:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  end_time_formatted:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  grain:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  next_form_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  number:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  payment_amount_type:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: ''
+    auto_fill: true
+    influence_conversation: false
+  previous_form_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  repeated_validation_failures:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  requested_slot:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  search_type:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  start_time:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  start_time_formatted:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  time:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  time_formatted:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  vendor_name:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  zz_confirm_form:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: "Bienvenue, je suis le bot de la Société Tunisienne de Banque, Voila des services dans lesquelles je peux vous rassurer: •\tTypes des credits. •\tCartes bancaires. •\tComptes     bancaires. •\tPaiement par carte. •\tTransfert           d'argent. •\tAutres services."
+  utter_timetable:
+  - text: Nos agences sont ouvertes du 08h30 à 17h,6/7
+  utter_goodbye:
+  - text: J'espere que je vous ai bien aider, à la prochaine.
+  utter_ask_whatelse:
+  - text: En quoi d'autre puis-je vous aider ?
+  utter_noworries:
+  - text: Bienvenue a tout moment
+  utter_ask_rephrase:
+  - text: Pouvez-vous reformuler votre phrase ?
+  - text: Pouvez-vous me faire une faveur et essayer de reformuler votre message ?
+  utter_ask_continue:
+  - text: Voulez-vous continuer?
+  utter_ok:
+  - text: 👍
+  utter_branch_locator:
+  - text: Dites-moi votre emplacement et je vous montrerai tous les succursales prés de vous.
+  - text: Donnez-moi un emplacement pour suggérer les succursales.
+  - text: Veuillez me fournir l'emplacement pour trouver des succursales pour vous.
+  utter_atm_locator:
+  - text: Dites-moi votre emplacement et je vous montrerai tous les guichet automatique.
+  - text: Donnez-moi un emplacement pour suggérer les les guichet automatique.
+  - text: Veuillez me fournir l'emplacement pour trouver les guichet automatique pour vous.
+  utter_assist_location:
+  - text: Pouvez-vous m'aider s'il vous plaît avec votre emplacement?
+  - text: Pouvez-vous m'aider s'il vous plaît avec votre localisation?
+  utter_thanks_for_Location:
+  - text: Merci de nous fournir l'accès à votre emplacement
+  utter_location_Unknown:
+  - text: Pas de problème, je rechercherai en fonction de votre emplacement actuel, veuillez m'autoriser à accéder à votre emplacement.
+  utter_location_denied:
+  - text: Je suis désolé je ne peux pas vous aider sans avoir votre localisation !
+  utter_loan_types:
+  - buttons:
+    - payload: /loan_home_about
+      title: Pret logement
+    - payload: /car_loan_details
+      title: Pret d'auto
+    - payload: /direct_credit_about
+      title: Credit direct
+    - payload: /credit_EslahMaskan_about
+      title: Credit Eslah Masken
+    text: Il existe 4 types de crédits accordés par notre banque
+  utter_condition_loan_approvel:
+  - text: "Si vous répondez à nos critères et exigences pour chaque crédit, il sera approuvé Donc pour prétendre à un de nos crédits il faut satisfaire quelques conditions: - Vous devez avoir un compte à usage non professionnel. - Vous devez avoir une capacité de remboursement, compte tenue des engagements existants et de l'échéance du crédit sollicité. - Vous n'avez pas d'impayés. - Vous n'etes pas interdit bancaire."
+  utter_extension_of_loan_tenure:
+  - text: Si vous souhaitez augmenter la durée de votre crédit, vous pouvez demander votre facilité de complément de crédit.
+  utter_loan_home_about:
+  - text: "Les crédits logement sont destinés à aider financièrement le demandeur à se permettre le coût du logement. Ces crédits dont accordés aux personnes physiques résidentes ainsi qu'aux tunisiens non-résidents pour compléter, à concurrence de 80%, le financement de: - L'acquisition d'un logement neuf ou ancien à usage d'habitation. - L'acquisition d'un terrain destiné à la construction d'un logement à usage d'habitation. - La construction ou l'extension s'un logement à usage d'habitation."
+  utter_home_loan_rate:
+  - text: Le taux d'intérêt pour le prêt au logement varie de x % à y % par an.
+  utter_documents_of_loan_to_the_home_required:
+  - text: "les documents demandés pour un crédit logement seront: - Une demande de crédit - La dernière fiche de paie ou de pension (pour les salariés et les retraités) - Celle du conjoint (crédit contracté par le couple) - Un engagement de domiciliation des revenus et les relevés des six derniers mois pour les professions libérales et les commerçants n'ayant pas de courant d'affaires avec la banque - La Déclaration Unique de Revenus pour les professions libérales et les commerçants - Une promesse de vente s'il s'agit d'une acquisition de terrain ou de logement accompagnée d'un document renseignant sur l'origine de propriété (titre foncier, titre arabe, certificat d'enrôlement, AFH, SNIT) - Une autorisation de bâtir et un jeu de plans approuvés et des devis descriptif et estimatif globaux, s'il s'agit de construction. - Les devis des travaux exécutés et des travaux restant à exécuter. - Le certificat de propriété ainsi que l'agrément du promoteur, s'il s'agit d'une acquisition auprès d'un promoteur. - Les extraits de naissance du client et du conjoint Les Tunisiens non-résidents, pour leur part, doivent fournir les pièces suivantes : - La carte de séjour - Une photocopie des deux premières pages du passeport - Le contrat de travail - Les trois dernières fiches de paie - Une déclaration des revenus - Les relevés de compte des 3 derniers mois"
+  utter_Repayment_loanhome_period:
+  - text: la durée du remboursement pour un credit logement est de 20 ans.
+  utter_guarantees_home_loan_required:
+  - text: " Les garanties exigées pour les crédits logements sont les suivantes: - Un contrat d'assurance vie à prime unique en faveur de la banque pour chaque contractant du crédit - Une Domiciliation Irrévocable de la Pension pour les retraités et les bénéficiaires de pension - Un contrat d'assurance incendie à prime unique pour les crédits destinés à l'acquisition ou à la construction d'un logement"
+  utter_loan_home_max_amount:
+  - text: Le montant maximal du prêt au logement est de AAA dinars.
+  utter_loan_home_min_amount:
+  - text: Le montant minimum pour le prêt au logement est de BBB dinars.
+  utter_direct_credit_about:
+  - text: ' Les crédits directs sont des crédits destinés à aider à financier les besoins ponctuel des particuliers sans etre liés à une utilisation déterminée.'
+  utter_guarantees_directcredit_required:
+  - text: "Les garanties exigées pour les crédits directs dont les suivantes : - Un contrat d'assurance vie à prime unique en faveur de la Banque pour chaque contractant du crédit. - Une Domiciliation Irrévocable de Salaire (DIS) ou une cession sur salaire pour les fonctionnaires, les salariés des entreprises publiques et parapubliques et les salariés des entreprises privées et celle du conjoint si le crédit est contracté par le couple - Une Domiciliation Irrévocable de la Pension pour les retraités et les bénéficiaires de pensions. - L'aval de l'employeur pour les salariés des entreprises privées clientes de la Banque et entretenant un courant d'affaires conséquent avec le montant du crédit, tout en ayant une situation financière saine."
+  utter_documents_required_for_directcredit:
+  - text: "Les documents suivants sont requis pour un crédit direct: - Une demande de crédit - La dernière fiche de paie ou de pension (pour les salariés et les retraités) - Celle du conjoint (crédit contracté par le couple) - Un engagement de domiciliation des revenus et les relevés des six derniers mois pour les professions libérales et les commerçants n'ayant pas de courant d'affaires avec la banque - La Déclaration Unique de Revenus pour les professions libérales et les commerçants"
+  utter_directcredit_period:
+  - text: Les crédits directs sont sanctionnés dans les 48 heures ouvrables.
+  utter_directcredit_rate:
+  - text: le taux d'interet d'un crédit direct est enviro 7% du montant
+  utter_Repayment_directcredit_period:
+  - text: le durée du remboursement pour un credit logement est de 3 ans au maximum.
+  utter_directcredit_max_amount:
+  - text: Le montant maximal du prêt personnel est de 500000 dinars.
+  utter_directcredit_min_amount:
+  - text: Le montant minimum pour un prêt personnel est de 3000 dinars.
+  utter_car_loan_details:
+  - text: le Prêt Auto est destiné à financer l'achat d’un véhicule de tourisme neuf ou d'occasion (moins de 3 ans)
+  utter_guarantees_carloan_required:
+  - text: " Les garanties exigées pour le Prets Auto sont les suivantes : - Un contrat d'assurance vie à prime unique en faveur de la Banque pour chaque contractant du crédit. - Une Domiciliation Irrévocable de salaire (DIS) ou une cession sur salaire pour les fonctionnaires, les salariés des entreprises publiques et parapubliques et les salariés des entreprises privées parapubliques et celle conjoint si le crédit est contracté par le couple. - Une Domiciliation Irrévocable de la Pension pour les retraités et les bénéficiaires de pensions. - Une transcription de privilèges sur la carte grise du véhicule objet du crédit."
+  utter_interest_rate_car_loan:
+  - text: Le taux d'intérêt pour le prêt d'auto varie de 5 % à 20% par an.
+  utter_car_loan_documents_required:
+  - text: "Les documents suivants sont requis pour un prêt d'auto: Une demande de crédit,  La dernière fiche de paie ou de pension (pour les salariés et les retraités), Celle du conjoint (crédit contracté par le couple), Un engagement de domiciliation des revenus et les relevés des six derniers mois pour les professions libérales et les commerçants n'ayant pas de courant d'affaires avec la banque, la Déclaration Unique de Revenus pour les professions libérales et les commerçants, Une preuve d'identité. est Une preuve de l'adresse."
+  utter_Repayment_Carloan_period:
+  - text: La durée du remboursement pour un pret d'Auto est de 7 ans pour les voitures neuves et 5 ans pour les voitures d'occasion.
+  utter_period_of_car_loan:
+  - text: La durée pour le prêt au logement est de 20 ans.
+  utter_car_loan_amount_max:
+  - text: Bénéficiez d'un prêt sans plafond * jusqu'à 80% du prix de la voiture.
+  utter_car_loan_amount_min:
+  - text: Bénéficiez d'un prêt sans plafond * jusqu'à 80% du prix de la voiture.
+  utter_credit_EslahMaskan_about:
+  - text: Le Crédit Eslah Masken est accordé au particulier résident pour compléter, à concurrence de 80%, le financement de la réparation et l'aménagement de son logement.
+  utter_guarantees_credit_EslahMaskan_required:
+  - text: " Les garanties exigées pour le Prets Auto sont les suivantes : - Un contrat d'assurance vie à prime unique en faveur de la Banque pour chaque contractant du crédit. - Une Domiciliation Irrévocable de salaire (DIS) ou une cession sur salaire pour les fonctionnaires, les salariés des entreprises publiques et parapubliques et les salariés des entreprises privées parapubliques et celle conjoint si le crédit est contracté par le couple. - Une Domiciliation Irrévocable de la Pension pour les retraités et les bénéficiaires de pensions. - Une transcription de privilèges sur la carte grise du véhicule objet du crédit."
+  utter_credit_EslahMaskan_rate:
+  - text: Le taux d'interet d'un crédit Eslah Maskan est de
+  utter_documents_required_for_EslahMaskan_credit:
+  - text: "Les documents demandés pour un crédit Eslah Maskan seront : - Une demande de crédit - La dernière fiche de paie et celle du conjoint et ce, dans le la cas d’un crédit contracté par le couple - Un engagement de domiciliation des revenus et les relevés des six derniers mois pour les professions libérales et les commençants n'ayant pas de courant d'affaires avec la banque. - Déclaration Unique de Revenus pour les professions libérales et les commerçants - Les devis des travaux exécutés et des travaux restant à exécuter"
+  utter_Repayment_EslahMaskan_credit_period:
+  - text: La durée de remboursement est de 5 ans au maximum
+  utter_EslahMaskan_credit_period:
+  - text: la periode de remboursement sera de 3 a 4 ans.
+  utter_EslahMaskan_credit_max_amount:
+  - text: Le montant maximum du crédit est du 40 000 dinars
+  utter_EslahMaskan_credit_min_amount:
+  - text: Le montant minimum du crédit est du 10 000 dinars
+  utter_Account_types:
+  - buttons:
+    - payload: /saving_account_about
+      title: Compte d'epargne
+    - payload: /current_account_about
+      title: Compte courant
+    - payload: /checking_account_about
+      title: Compte chéque
+    text: Il existe actuellement 3 types de comptes bancaires
+  utter_account_opening:
+  - text: D'accord, je vais vous aider, quel type de compte souhaitez-vous ouvrir?
+  utter_benefits_of_account_opening:
+  - text: ' Avoir un compte bancaire a plusieurs avantages : - Sécurité : Le principal avantage d’avoir un compte bancaire est peut-être la sécurité. L’argent qui reste dans une maison ou sur votre personne peut être volé ou perdu dans un sinistre, comme un incendie. Par contre, les argents placés dans un compte bancaire sont automatiquement assurés contre la perte par le gouvernement fédéral. Même si la banque où vous détenez le compte est dévalisée ou fait faillite, votre argent est toujours en sécurité. - Bénéfices : Certains types de comptes bancaires, comme le compte d’épargne, peuvent offrir à la titulaire un petit profit sur son dépôt. En échange de l’autorisation donnée à une banque d’utiliser votre argent pour faire des placements, la banque vous indemnisera en vous versant un petit taux d’intérêt. Dans certains types de comptes, votre argent est placé dans des fonds du marché monétaire liquides, ce qui génère des revenus plus élevés. - Paiement de factures : De nombreux comptes bancaires sont établis de façon à ce que les entreprises auxquelles les titulaires de comptes versent régulièrement des paiements de factures – compagnies d’assurance, services publics, prêteurs – puissent prélever de l’argent directement sur le compte. Cela permet au titulaire du compte d’économiser le temps et les frais d’envoi d’un chèque ou d’un mandat-poste. De plus, de nombreuses banques offrent le dépôt direct, dans lequel le chèque de paie d’un titulaire de compte est automatiquement déposé dans son compte bancaire. - Économies sur les transactions financières : De nombreux comptes bancaires simples, comme les comptes chèques, coûtent peu ou pas du tout au titulaire du compte. Toutefois, le fait d’être titulaire d’un compte peut donner accès à un certain nombre de services financiers à un taux réduit. Cela comprend l’encaissement de chèques, qui peut coûter de l’argent à un point d’encaissement de chèques, mais qui est généralement gratuit pour les titulaires de compte. De même, alors que les sociétés qui transfèrent de l’argent facturent des frais en pourcentage du montant viré, les banques facturent aux titulaires de comptes un taux fixe inférieur. - Accessibilité : Au lieu d’emporter tout votre argent avec vous, avoir un compte bancaire vous donne la possibilité de retirer une petite somme d’argent d’une variété d’endroits en utilisant une carte de débit. Cette carte peut généralement être utilisée pour faire des achats ou pour retirer de l’argent à un guichet automatique. Pour des sommes plus importantes, une personne peut faire un chèque, ce qui permet au bénéficiaire de retirer une certaine somme d’argent de son compte.'
+  utter_savings_account_about:
+  - text: Un compte d'épargne est un dépôt d'argent à vue dans une banque ou un organisme assimilé, rapportant un intérêt et ne permettant généralement pas d'être utilisé pour faire directement des paiements.
+  utter_saving_account_advantages:
+  - text: "Le Compte d'Epargne vous permet de constituer progressivement des économies tout en bénéficiant de : - Une prime de fidélité  pour les fonds restés stables - Une disponibilité totale et sécurité des fonds - Une facilité du suivi des opérations effectuées grâce à votre livret - Une possibilité de retrait au niveau de tout le réseau d'agences STB - Des intérêts décomptés trimestriellement."
+  utter_saving_account_eligibility:
+  - text: Toute personne physique, y compris les mineurs avec autorisation du tuteur légal ou de son représentant légal.
+  utter_documents_for_savingaccount:
+  - text: Rendez-vous à votre agence afin de signer la convention d’ouverture d’un Compte Spécial d’Epargne.
+  utter_current_account_about:
+  - text: Le compte courant est le dispositif bancaire dont se sert le client d'une banque pour ses achats, ses retraits, ses dépôts quotidiens, déposer des chèques, faire les retraits et le paiement des factures
+  utter_current_account_advantages:
+  - text: "Avec le compte Courant, vous disposez d’une multitude de solutions pour mieux gérer votre argent : - Vous disposez de votre argent à tout moment - Vous bénéficiez d'une rémunération de votre compte - Vous avez la possibilité d'accédez , 24h/24 et 7j/7, aux services de la banque à distance en vous abonnant à STB NET - Vous avez la possibilité de disposer de nos différents concours pour les avances et financement de vos cycles d'exploitation. Votre compte vous fait bénéficier  des moyens de paiement suivants : - Un carnet de chèque - Des cartes de paiement et de retrait - Un prélèvement  automatique pour régler vos factures courantes (STEG, SONEDE,…)"
+  utter_current_account_eligibility:
+  - text: 'Le compte courant est destiné aux professionnels qu’ils soient personnes physiques ou morales exerçant une activité : commerciale, industrielle, agricole ou libérale'
+  utter_documents_for_currentaccount:
+  - text: 'les documents demandés sont : - Documents d’usage d’ouverture de compte pour les personnes physiques professionnelles - Documents d’usage d’ouverture de compte pour les personnes morales résidentes.'
+  utter_checking_account_about:
+  - text: Le compte chèque est un compte de dépôt ordinaire dont les règles de fonctionnement et les tarifs sont fixés par la convention de compte signée entre la banque et son client. Sur ce type de compte, le titulaire dispose d’un chéquier et d’une carte bancaire.
+  utter_checking_account_eligibility:
+  - text: les gens qui beneficent d'un compte cheques se sont personnes physiques résidentes pour des besoins non professionnels et toute personne morale à but non lucratif (association, syndic, …)
+  utter_documents_for_checking_account:
+  - text: 'Les documents nécessaires pour ouvrir un compte chéque sont: - Documents d’usage d’ouverture de compte pour les personnes physiques résidentes - Documents d’usage d’ouverture de compte pour les personnes morales résidentes à but non lucratif - Acte d’émancipation pour les mineurs émancipés - Demande d’ouverture de compte joint  précisant si le compte doit fonctionner par une seule signature ou par des signatures conjointes'
+  utter_checking_account_advantages:
+  - text: "En ouvrant un compte bancaire, vous disposez d’une multitude de solutions pour mieux gérer votre argent. Votre compte vous permet de : Percevoir votre salaire ou allocation Déposer des fonds Payer vos achats Régler vos factures Mettre votre argent en sécurité Votre compte vous fait bénéficier  des moyens de paiement suivants : Un carnet de chèque Des cartes de paiement et de retrait Un prélèvement  automatique pour régler vos factures courantes (STEG, SONEDE,…) Pour suivre votre compte à distance, abonnez  vous  à  l'un de nos services de banque à distance : STB on line, STB SMS et STB NET."
+  utter_card_types:
+  - buttons:
+    - payload: /CIBcard_about
+      title: Carte CIB
+    - payload: /C-CASHcard_about
+      title: Carte STB C Cash
+    - payload: /InternationalclassicVisa_card_about
+      title: Carte Visa Classic Internationale
+    - payload: /InternationalTechnology_card_about
+      title: International Technology STB Card
+    text: Il existe 4 types de cartes fournies par notre banque.
+  utter_CIBcard_about:
+  - text: La Carte CIB Mastercard est un moyen de paiement et de retrait, à usage exclusivement électronique.
+  utter_Eligibilityof_CIBcard:
+  - text: "La carte STB CIB Mastercard est accessible à : Toute personne physique titulaire d'un compte ouvert auprès de la STB."
+  utter_caracteristicsof_CIBcard:
+  - text: La Carte STB CIB Mastercard est octroyée pour une durée de cinq années Elle est renouvelée par tacite reconduction pour la même durée sauf volonté contraire exprimée 30 jours avant l'expiration de ladite période.
+  utter_advantagesof_CIBcard:
+  - text: "La carte STB CIB Mastercard vous permet de : - Payer vos achats de biens et services auprès des commençants affiliés au réseau Mastercard - Disposer d'avances en espèces auprès des agences bancaires tunisiennes affiliées au réseau Mastercard - Effectuer des retraits espèces auprès d'appareils automatiques (D.A.B/G.A.B) arborant l'emblème Mastercard - Effectuer des opérations de paiement sur internet."
+  utter_order_CIBcard:
+  - text: Pour disposer d’une carte CIB Mastercard, il suffit de remplir l’imprimé demandé de carte STB et de le déposer auprès de votre agence. Voici le lien où vous trouverez le formulaire à remplir [] {lien}
+  utter_desactivate&reactivate_CIBcard:
+  - text: Pour desactiver ou reactiver votre carte vous allez au point de vente le plus proche et disposer une demande pour cette desactivation ou reactivation.
+  utter_C-CASHcard_about:
+  - text: La carte STB C-Cash est une carte bancaire VISA nationale RECHARGEABLE. Elle offre toutes les fonctionnalités de la carte de paiement bancaire classique et n’est pas liée à un compte bancaire.
+  utter_Eligibilityof_C-CASH:
+  - text: Toute personne physique peut bénéficier de la carte STB C-Cash sur présentation d’une pièce d’identité et sans besoin d’avoir un compte bancaire.
+  utter_caracteristicsof_C-CASHcard:
+  - text: 'La carte STB C-Cash est une carte sans compte bancaire, simple, facile à utiliser, dotée de la technologie “contactless”,elle vous permet de: - Retirer de l’argent auprès des DABs/GABs. - Régler des achats en Tunisie chez les commerçants affiliés au réseau de paiement TPE. - Effectuer des transactions sur internet en toutensécurité. - Réaliser des opérations de transfert. - Consulter votre solde et les mouvements effectués à distance à travers l’application mobile STB Direct. - Recharger votre carte à travers différents canaux (Agence, STB Direct, STB Net), le plafond de chaque recharge peut aller jusqu’à 3000 Dinars.'
+  utter_advantagesof_C-CASHcard:
+  - text: 'La carte C-Cash c’est un outil pour : - Maitriser votre budget : Une enveloppe dédiée à un projet pour ne dépenser que le budget prévu (pour les vacances, les courses…). - Gérer le budget de vos proches : Pour vous permettre de gérer le budget que vous voulez octroyer à vos proches (budget mensuel pour votre enfant ou votre conjoint ). - Une sécurité supplémentaire de votre compte bancaire : Pour effectuer vos achats à distance notamment sur Internet sans utiliser votre carte bancaire principale. - Une alternative en cas de besoin : Pour une dépense importante au-delà du plafond de votre carte bancaire principale.'
+  utter_order_C-CASHcard:
+  - text: 'Comment bénéficier de votre carte C-Cash : Présentez-vous à l’une de nos agences STB, elle vous sera délivrée instantanément avec un code confidentiel, elle peut être selon votre choix anonyme ou personnalisée. Elle reste valable pendant 3 ans.'
+  utter_desactivate&reactivate_C-CASHcard:
+  - text: Pour desactiver ou reactiver votre carte vous allez au point de vente le plus proche et disposer une demande pour cette desactivation ou reactivation.
+  utter_InternationalclassicVisa_card_about:
+  - text: La carte STB Visa Classic Internationale est une carte de retrait et de paiement, valable aussi bien en Tunisie qu'à l'étranger.
+  utter_Eligibilityof_InternationalclassicVisa_card:
+  - text: "La carte Visa Classic Internationale est attribuée à : Toute personne physique ou morale titulaire d'un compte en dinars convertibles, en devises ou d'un dossier AVA "
+  utter_caracteristicsof_InternationalclassicVisa_card:
+  - text: "Plafonds hebdomadaires : Les plafonds sont personnalisés en fonction des revenus et des droits à transfert Conditions particulières : La carte STB Visa Classique Internationale est octroyée pour une durée de cinq années. Elle est renouvelée par tacite reconduction pour la même durée sauf volonté contraire exprimée 30 jours avant l'expiration de ladite période. Selon vos besoins, vous avez la possibilité d'augmenter les montants de vos plafonds de retraits ou d'achats. "
+  utter_advantagesof_InternationalclassicVisa_card:
+  - text: 'La carte STB Visa Classic Internationale vous permet de : •Payer vos achats de biens et services auprès des commerçants arborant l’emblème Visa aussi bien en Tunisie qu’à l’étranger, •Disposer d’avances en espèces auprès des agences bancaires affiliées au système visa  et dotées de terminaux de paiement électroniques aussi bien en Tunisie qu’à l’étranger, •Effectuer des retraits espèces auprès d’appareils automatiques (DAB/GAB) arborant l’emblème Visa aussi bien en Tunisie qu’à l’étranger, •Effectuer des opérations de paiement par internet.'
+  utter_order_InternationalclassicVisa_card:
+  - text: Pour disposer de la carte Visa Classic Internationale, il suffit de remplir l’imprimé Demande de carte STB et de le déposer auprès de votre agence.
+  utter_desactivate&reactivate_InternationalclassicVisa_card:
+  - text: Pour desactiver ou reactiver votre carte vous allez au point de vente le plus proche et disposer une demande pour cette desactivation ou reactivation.
+  utter_InternationalTechnology_card_about:
+  - text: L’International  Technology  STB Card est une carte Visa Internationale utilisable uniquement sur internet
+  utter_Eligibilityof_InternationalTechnology_card:
+  - text: 'Peuvent bénéficier de L’International Technology STB CARD : Les personnes physiques tunisiennes résidentes, titulaires d’un diplôme au moins équivalent au baccalauréat. Toute autre personne physique autorisée par la BCT. Pour les entreprises résidentes ayant une activité liée à la télécommunication, l’informatique, l’éducation, l’enseignement supérieur, l’étude, le conseil ou la recherche.'
+  utter_caracteristicsof_InternationalTechnology_card:
+  - text: 'L’International Technology STB CARD est une carte Visa internationale qui se présente en deux versions : - Pour les personnes physiques tunisiennes résidentes,  avec un plafond  annuel de 1.000 Dinars. - Pour les entreprises résidentes, avec un plafond annuel de 10.000 Dinars.'
+  utter_advantagesof_InternationalTechnology_card:
+  - text: 'La carte technologie internationale est utilisée pour le règlement des dépenses relatives à : - L’hébergement de sites web ou d’applications  mobiles - La publicité et abonnements aux sites web étrangers, notamment les plateformes de sous-traitance (freelance), et les sites web à caractère éducatif - Recherche et collecte d’informations - Achat de services de formation en ligne, d’outils de développement d’applications et de licences logiciels. Avec  l’International  Technology  STB Card, bénéficiez  de : - La sécurité de paiement grâce à votre code CVV2. - La souplesse pour recharger votre carte à tout moment , au niveau de votre agence et dans  la limite de l’allocation annuelle. - L’aisance dans l’utilisation du montant annuel de l’allocation  (en une ou plusieurs fois).'
+  utter_order_InternationalTechnology_card:
+  - text: 'Pour bénéficier de L’International Technology STB CARD, il suffit de déposer une demande de carte auprès de votre agence, avec les documents suivants : Si vous êtes Particulier : - Carte d’Identité Nationale - Copie certifiée conforme du diplôme - Ou une autorisation de la Banque Centrale de Tunisie​ Si vous êtes Entreprise : - Documents d’usage d’ouverture de compte pour les entreprises résidentes - Attestation de dépôt de déclaration auprès de l’APII (Agence de Promotion de l’Industrie et de l’Innovation. - Ou autorisation de la Banque Centrale de Tunisie.'
+  utter_desactivate&reactivate_InternationalTechnology_card:
+  - text: Pour desactiver ou reactiver votre carte vous allez au point de vente le plus proche et disposer une demande pour cette desactivation ou reactivation.
+  utter_card_Loss:
+  - text: 'En cas de perte, de vol, de dommage ou si vous soupçonnez que votre Carte a été utilisée frauduleusement vous devez: •Appelez le centre d’opposition disponible 24H/7j au numéro: +216 71 140 400. •Contacter directement l’une de nos agences STB la plus proche.'
+  utter_thankyou:
+  - text: Merci pour votre interaction, Bonne journée !
+  utter_help:
+  - text: Par quoi je peux vous aider ?
+  utter_out_of_scope:
+  - text: Désolé, je ne sais pas comment répondre à cela.
+  utter_ask_transfer_money_form_amount-of-money:
+  - text: Combien d'argent voulez-vous transférer?
+  utter_ask_transfer_money_form_PERSON:
+  - text: A qui voulez-vous transférer de l'argent?
+  utter_transfer_complete:
+  - text: Transferer avec succès {currency}{amount-of-money} à {PERSON}.
+  utter_transfer_charge:
+  - text: Vous avez droit à six virements au cours d'un cycle de relevé avant d'être accusé. Pour les transferts ultérieurs, vous serez facturé {currency} 10 par opération.
+  utter_ask_cc_payment_form_amount-of-money:
+  - text: Combien voulez-vous payer?
+  utter_ask_cc_payment_form_credit_card:
+  - text: Vers quel compte souhaitez-vous effectuer un paiement ?
+  utter_ask_cc_payment_form_time:
+  - text: Pour quelle date souhaitez-vous programmer le paiement?
+  utter_ask_transaction_search_form_vendor_name:
+  - text: Pour quel fournisseur voulez-vous voir les transactions?
+  utter_ask_transaction_search_form_time:
+  - text: Dans quel délai souhaitez-vous chercher des transactions?
+  utter_ask_transaction_search_form_search_type:
+  - buttons:
+    - payload: /inform{"search_type":"deposit"}'
+      title: entrante
+    - payload: /inform{"search_type":"spend"}'
+      title: sortante
+    text: Souhaitez-vous savoir les transactions entrantes ou sortantes?
+  utter_no_payment_amount:
+  - text: Désolé, montant de paiement est invalide.
+  utter_no_paymentdate:
+  - text: Désolé, ce n'est pas une date de paiement valide.
+  utter_no_creditcard:
+  - text: Désolé, ce n'est pas un compte de carte de crédit valide pour effectuer des paiements.
+  utter_no_vendor_name:
+  - text: Désolé, ce fournisseur est inconnu.
+  utter_no_transactdate:
+  - text: Désolé, ce n'est pas un délai connu.
+  utter_cc_pay_scheduled:
+  - text: Paiement de {currency}{amount-of-money}{payment_amount_type} vers votre {credit_card} compte va être effectué à {time_formatted}.
+  utter_searching_spend_transactions:
+  - text: Recherche d'opérations{vendor_name} entre {start_time_formatted} et {end_time_formatted}...
+  utter_found_spend_transactions:
+  - text: J'ai trouvé {numtransacts} transactions {vendor_name} avec un total de {currency}{total}.
+  utter_searching_deposit_transactions:
+  - text: Recherche des dépôts effectués sur votre compte entre {start_time_formatted} et {end_time_formatted}.
+  utter_found_deposit_transactions:
+  - text: j'ai trouvé {numtransacts} les dépôts effectués sur votre compte totalisant {currency}{total}
+  utter_default:
+  - text: Je n'ai pas bien compris ça. Pourriez-vous reformuler?
+  utter_ask_cc_payment_form_AA_CONTINUE_FORM:
+  - buttons:
+    - payload: /affirm
+      title: Oui
+    - payload: /deny
+      title: Non, annulez la transaction
+    text: Souhaitez-vous continuer à programmer le paiement par carte de crédit ?
+  utter_ask_transfer_money_form_AA_CONTINUE_FORM:
+  - buttons:
+    - payload: /affirm
+      title: Oui
+    - payload: /deny
+      title: Non, annuler le transfert
+    text: Souhaitez-vous continuer à programmer le transfert d'argent ?
+  utter_ask_transaction_search_form_AA_CONTINUE_FORM:
+  - buttons:
+    - payload: /affirm
+      title: Oui
+    - payload: /deny
+      title: Non, annuler
+    text: Souhaitez-vous continuer la recherche de transactions?
+  utter_ask_cc_payment_form_zz_confirm_form:
+  - buttons:
+    - payload: /affirm
+      title: Oui
+    - payload: /deny
+      title: Non, annulez la transaction
+    text: Souhaitez-vous programmer un paiement de {currency}{amount-of-money}{payment_amount_type} vers votre {credit_card} compte pour {time_formatted}?
+  utter_ask_transfer_money_form_zz_confirm_form:
+  - buttons:
+    - payload: /affirm
+      title: Oui
+    - payload: /deny
+      title: Non, annulez la transaction
+    text: Souhaitez-vous transférer {currency}{amount-of-money} à {PERSON}?
+  utter_cc_pay_cancelled:
+  - text: Paiement par carte de crédit est annulé.
+  utter_transfer_cancelled:
+  - text: Transfert annulé.
+  utter_transaction_search_cancelled:
+  - text: La recherche de transaction est annulée.
+  utter_account_balance:
+  - text: Le solde de votre compte bancaire est {currency}{init_account_balance}.
+  utter_changed_account_balance:
+  - text: Le solde de votre compte bancaire était {currency}{init_account_balance} et maintenant est de {currency}{account_balance} après les virements et les paiements.
+  utter_unknown_recipient:
+  - text: Desole, {PERSON} n'est pas dans votre liste de destinataires connus.
+  utter_insufficient_funds:
+  - text: Desolé! vous n'avez pas assez d'argent pour le faire
+  utter_insufficient_funds_specific:
+  - text: Le {payment_amount_type} sur votre {credit_card} carte de crédit est {amount-of-money}, donc vous n'avez pas assez de fonds pour le rembourser.
+  utter_credit_card_balance:
+  - text: Le solde actuel de votre {credit_card} compte est {currency}{credit_card_balance}.
+  utter_nothing_due:
+  - text: vous n'avez pas d'argent dans votre {credit_card} pour payer facture.
+  utter_recipients:
+  - text: Ce sont vos destinataires connus à qui vous pouvez envoyer de l'argent:{formatted_recipients}
+actions:
+- action_session_start
+- action_restart
+- action_show_balance
+- action_show_recipients
+- action_show_transfer_charge
+- action_pay_cc
+- action_transfer_money
+- action_transaction_search
+- action_ask_transaction_search_form_zz_confirm_form
+- action_switch_forms_ask
+- action_switch_forms_deny
+- action_switch_forms_affirm
+- action_switch_back_ask
+- validate_cc_payment_form
+- validate_transfer_money_form
+- validate_transaction_search_form
+- action_dynamic_link 
+forms:
+  cc_payment_form:
+    required_slots:
+      AA_CONTINUE_FORM:
+      - intent: affirm
+        type: from_intent
+        value: yes
+      - intent: deny
+        type: from_intent
+        value: no
+      - intent:
+        - inform
+        - cc_payment_form
+        type: from_text
+      amount-of-money:
+      - entity: amount-of-money
+        not_intent:
+        - check_balance
+        - check_earnings
+        type: from_entity
+      - entity: number
+        not_intent:
+        - check_balance
+        - check_earnings
+        type: from_entity
+      - intent:
+        - inform
+        - cc_payment_form
+        type: from_text
+      credit_card:
+      - entity: credit_card
+        type: from_entity
+      - intent:
+        - inform
+        - cc_payment_form
+        type: from_text
+      time:
+      - entity: time
+        type: from_entity
+      - intent:
+        - inform
+        - cc_payment_form
+        type: from_text
+      zz_confirm_form:
+      - intent: affirm
+        type: from_intent
+        value: yes
+      - intent: deny
+        type: from_intent
+        value: no
+      - intent:
+        - inform
+        - cc_payment_form
+        type: from_text
+  transfer_money_form:
+    required_slots:
+      AA_CONTINUE_FORM:
+      - intent: affirm
+        type: from_intent
+        value: yes
+      - intent: deny
+        type: from_intent
+        value: no
+      - intent:
+        - inform
+        - transfer_money_form
+        type: from_text
+      PERSON:
+      - entity: PERSON
+        type: from_entity
+      - intent:
+        - inform
+        - transfer_money_form
+        type: from_text
+      amount-of-money:
+      - entity: amount-of-money
+        not_intent:
+        - check_balance
+        - check_earnings
+        type: from_entity
+      - entity: number
+        not_intent:
+        - check_balance
+        - check_earnings
+        type: from_entity
+      - intent:
+        - inform
+        - transfer_money_form
+        type: from_text
+      zz_confirm_form:
+      - intent: affirm
+        type: from_intent
+        value: yes
+      - intent: deny
+        type: from_intent
+        value: no
+      - intent:
+        - inform
+        - transfer_money_form
+        type: from_text
+  transaction_search_form:
+    required_slots:
+      AA_CONTINUE_FORM:
+      - intent: affirm
+        type: from_intent
+        value: yes
+      - intent: deny
+        type: from_intent
+        value: no
+      - intent:
+        - inform
+        - transaction_search_form
+        type: from_text
+      search_type:
+      - intent: search_transactions
+        type: from_trigger_intent
+        value: spend
+      - intent: check_earnings
+        type: from_trigger_intent
+        value: deposit
+      - entity: search_type
+        type: from_entity
+      time:
+      - entity: time
+        type: from_entity
+      - intent:
+        - inform
+        - transaction_search_form
+        type: from_text
+      zz_confirm_form:
+      - intent: affirm
+        type: from_intent
+        value: yes
+      - intent: deny
+        type: from_intent
+        value: no
+      - intent:
+        - inform
+        - transaction_search_form
+        type: from_text
+e2e_actions: []
