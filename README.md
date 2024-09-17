@@ -1,7 +1,6 @@
 ## 📚 Financial Services Chat Bot 
-
-
-This is an example chatbot demonstrating how to build AI assistants for financial services and banking. It includes pre-built intents, actions, and stories for handling conversation flows like checking spending history and transferring money to another account, asking for services ect.. ![image](https://github.com/user-attachments/assets/bf188d48-ab48-4a5d-aaea-da8ac2351817)
+![image](https://github.com/user-attachments/assets/bf188d48-ab48-4a5d-aaea-da8ac2351817)
+This is an example chatbot demonstrating how to build AI assistants for financial services and banking. It includes pre-built intents, actions, and stories for handling conversation flows like checking spending history and transferring money to another account, asking for services ect.. 
 
 
 
@@ -56,7 +55,7 @@ tests/ - end-to-end tests
 
 The bot currently has some skills. You can ask it to:
 
-1.Transfer money to another person
+1. Transfer money to another person
 
 2. Check your earning or spending history
  
