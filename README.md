@@ -3,7 +3,7 @@
 This is an example chatbot demonstrating how to build AI assistants for financial services and banking. It includes pre-built intents, actions, and stories for handling conversation flows like checking spending history and transferring money to another account, asking for services ect..
 
 
-### Install dependencies
+## Install dependencies
 Run:
 
 pip install -r requirements.txt
@@ -34,7 +34,7 @@ rasa x
 Refer to our guided workflow in the Wiki page for how to get started with Rasa X in local mode (server).
 
 
-### Overview of the files
+## Overview of the files
 data/nlu/nlu.yml - contains NLU training data
 
 data/nlu/rules.yml - contains rules training data
@@ -50,7 +50,7 @@ config.yml - training configurations for the NLU pipeline and policy ensemble
 tests/ - end-to-end tests
 
 
-### Things you can ask the bot
+## Things you can ask the bot
 
 The bot currently has some skills. You can ask it to:
 
