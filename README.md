@@ -1,7 +1,8 @@
-## 📚 rFinancial Services Chat Bot  ![image](https://github.com/user-attachments/assets/0c6e9855-fc1f-4341-b807-337a4b2739ae)
+## 📚 Financial Services Chat Bot 
 
 
-This is an example chatbot demonstrating how to build AI assistants for financial services and banking. It includes pre-built intents, actions, and stories for handling conversation flows like checking spending history and transferring money to another account, asking for services ect..
+This is an example chatbot demonstrating how to build AI assistants for financial services and banking. It includes pre-built intents, actions, and stories for handling conversation flows like checking spending history and transferring money to another account, asking for services ect.. ![image](https://github.com/user-attachments/assets/bf188d48-ab48-4a5d-aaea-da8ac2351817)
+
 
 
 ## 🚀 Install dependencies
@@ -51,7 +52,7 @@ config.yml - training configurations for the NLU pipeline and policy ensemble
 tests/ - end-to-end tests
 
 
-## Things you can ask the bot
+## 🔍 Things you can ask the bot
 
 The bot currently has some skills. You can ask it to:
 
@@ -67,7 +68,7 @@ The bot currently has some skills. You can ask it to:
    
 6. Other services..
 
-## Testing the bot 
+## 🤖 Testing the bot 
 ![image](https://github.com/user-attachments/assets/c7d81924-3961-4d49-8269-c8e1614687c7) ![image](https://github.com/user-attachments/assets/61d9ef86-063e-402f-9972-74044a0310d4)
 
 
