@@ -63,8 +63,6 @@ The bot currently has some skills. You can ask it to:
 6. Other services..
 
 ## Testing the bot 
-![image](https://github.com/user-attachments/assets/c7d81924-3961-4d49-8269-c8e1614687c7)
-
-![image](https://github.com/user-attachments/assets/61d9ef86-063e-402f-9972-74044a0310d4)
+![image](https://github.com/user-attachments/assets/c7d81924-3961-4d49-8269-c8e1614687c7) ![image](https://github.com/user-attachments/assets/61d9ef86-063e-402f-9972-74044a0310d4)
 
 
