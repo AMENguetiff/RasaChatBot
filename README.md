@@ -5,9 +5,11 @@ This is an example chatbot demonstrating how to build AI assistants for financia
 
 ### Install dependencies
 Run:
+
 pip install -r requirements.txt
 
 Run the bot
+
 Use rasa train to train a model.
 
 Then, to run, first set up your action server in one terminal window, listening on port 5056:
@@ -31,6 +33,7 @@ You can also try out your bot locally using Rasa X by running
 rasa x
 Refer to our guided workflow in the Wiki page for how to get started with Rasa X in local mode (server).
 
+
 ### Overview of the files
 data/nlu/nlu.yml - contains NLU training data
 
@@ -45,6 +48,7 @@ domain.yml - the domain file, including bot response templates
 config.yml - training configurations for the NLU pipeline and policy ensemble
 
 tests/ - end-to-end tests
+
 
 ### Things you can ask the bot
 
