@@ -1,9 +1,10 @@
-## Financial Services Chat Bot  ![image](https://github.com/user-attachments/assets/c8662791-ce10-4e2a-81f7-0b876c757ce8)
+## 📚 rFinancial Services Chat Bot  ![image](https://github.com/user-attachments/assets/0c6e9855-fc1f-4341-b807-337a4b2739ae)
+
 
 This is an example chatbot demonstrating how to build AI assistants for financial services and banking. It includes pre-built intents, actions, and stories for handling conversation flows like checking spending history and transferring money to another account, asking for services ect..
 
 
-## Install dependencies
+## 🚀 Install dependencies
 Run:
 
 pip install -r requirements.txt
@@ -39,7 +40,7 @@ data/nlu/nlu.yml - contains NLU training data
 
 data/nlu/rules.yml - contains rules training data
 
-data/stories/stories*.yml - contains stories training data
+data/stories/stories.yml - contains stories training data
 
 actions.py - contains custom action/api code
 
